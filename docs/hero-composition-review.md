@@ -25,4 +25,4 @@ Evidence: [workflow-atmosphere](../evidence/workflow-atmosphere/), including scr
 
 Review the shared portrait/workflow texture, strength of the upper color and balance behind the compact prism. Detailed case studies remain deferred. Earlier metro-style documents are retained in Git history and locally under archive/hero-before-workflow/docs/.
 
-Production verification will be appended after the existing Git integration deploys this revision.
+Production source revision 1537874 deployed READY as dpl_8KcPpvrBHPzeBkuNh5BGBLE7um4M through the existing Git integration (Vite, approximately 11 seconds building-to-ready). Live desktop English and mobile Chinese confirmed one ready WebGL canvas, five screened nodes, loaded portrait, compact Chinese wording, no horizontal overflow and no application console errors. Locale/slash URLs and current JS/CSS/scene/portrait assets returned 200 with correct MIME types; a missing JS asset remained 404. Production screenshots and HTTP observations are included in evidence/workflow-atmosphere/. This does not constitute physical iPhone verification.

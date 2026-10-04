@@ -1,0 +1,14 @@
+{
+  "background": "rgb(24, 59, 145)",
+  "buttons": 0,
+  "canvas": 1,
+  "heroBackground": "linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(16, 17, 20, 0.3) 32%, rgba(16, 17, 20, 0.87) 73%, rgb(16, 17, 20) 100%), radial-gradient(at 15% 0%, rgba(0, 94, 245, 0.9), rgba(0, 0, 0, 0) 70%), radial-gradient(at 94% 0%, rgba(116, 44, 220, 0.82), rgba(0, 0, 0, 0) 70%), linear-gradient(105deg, rgb(7, 76, 174), rgb(72, 48, 144))",
+  "locale": "zh-Hans",
+  "mode": "webgl",
+  "nodes": 5,
+  "overflow": false,
+  "portraitLoaded": true,
+  "ready": "true",
+  "text": "业财税 / 工作流 / 数字化使用左右方向键旋转，按 Home 键复位。",
+  "url": "https://leo-li.vercel.app/zh/"
+}
