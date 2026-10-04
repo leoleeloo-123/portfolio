@@ -56,4 +56,3 @@ Desktop uses 16 spectral samples per pass; narrow canvases use 8, with render-ta
 The portrait PNG is about 2MB and remains unoptimized. Build sizes are approximately 300.18kB / 95.63kB gzip for main JS and 926.27kB / 246.83kB gzip for the lazy scene. These are bundle sizes, not load-time measurements. Source photo processing and fidelity limits remain in [asset-processing.md](asset-processing.md).
 
 Review crystal/refraction identity, drag and idle tempo, face readability, compact index rhythm and phone composition next. The owner will supply content and chronology later. Detailed Deloitte, Tax Engine, CRM and Fitness OS demos remain deferred. Repository synchronization was separately authorized after visual approval; deployment remains outside scope. See [progress.md](progress.md) for the subsequent refresh fix and cleanup.
-

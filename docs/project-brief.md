@@ -31,4 +31,3 @@ Pending: public chronology for the timeline; Deloitte final transition date; cur
 On 2026-10-04 the owner approved the current visual base and authorized syncing this project to `leoleeloo-123/portfolio`. Preserve repository history, keep the archive local and ignored, and do not change repository visibility. Deployment, public previews, cloud resources, backend and live APIs remain outside scope.
 
 Future modules: Deloitte workflow visualization, Tax Engine synthetic SaaS demonstration, Navi Material CRM showcase, Fitness OS AI interaction demo. Future publication review: both locales on both hosting targets, route fallback, localized metadata, discoverable language links, prerender/SEO, domain and mainland hosting requirements. No production domain assumed.
-

@@ -55,4 +55,3 @@ Adding more sections before the signature effects are reviewed; replacing scramb
 ## Review checkpoint
 
 The owner should review crystal identity, drag/idle tempo, face clarity, compact index rhythm and deliberate phone composition. Current verification and limitations are in [reference-alignment-review.md](reference-alignment-review.md); evidence is under evidence/reference-alignment/. Previous portrait, abstract-glass and nine-module captures are retained only in the local ignored archive. The owner has approved the current visual base; future design refinements remain possible. Detailed case studies continue to wait for visual approval.
-

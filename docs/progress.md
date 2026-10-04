@@ -13,7 +13,7 @@ The briefly visible portrait was the current loading fallback, not a stale asset
 - Archived historical reviews/screenshots, recording scratch files, previous documentation and the original photograph under `archive/2026-10-04/`.
 - Condensed README and portrait provenance; kept the active brief, design system and current detailed visual review.
 - Git and ESLint exclude archive; TypeScript includes only src. Generated dist, node_modules and build metadata remain ignored.
-- Initialized the local Git repository for the explicitly authorized GitHub synchronization. The target repository was verified empty with push access; no previous remote history needed replacement. The public PNG derivative is included; the original portrait and local archive are excluded.
+- Initialized the local Git repository and synchronized the approved source to `leoleeloo-123/portfolio` on `main`. The target repository was verified empty with push access; no previous remote history needed replacement. The public PNG derivative is included; the original portrait and local archive are excluded. No deployment workflow was added.
 
 ## Actual verification of this cleanup
 
