@@ -1,0 +1,912 @@
+[
+  {
+    "locale": "zh",
+    "width": 320,
+    "canvas": 1,
+    "clientWidth": 305,
+    "controls": [
+      {
+        "height": 44,
+        "label": "作品",
+        "width": 46
+      },
+      {
+        "height": 44,
+        "label": "关于我",
+        "width": 58
+      },
+      {
+        "height": 44,
+        "label": "EN",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "中文",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "向左旋转方块",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "复位方块视角",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "向右旋转方块",
+        "width": 44
+      }
+    ],
+    "mode": "webgl",
+    "outOfBounds": [],
+    "overflow": 0,
+    "ready": "true",
+    "titles": [
+      {
+        "height": 21,
+        "title": "Tax Engine",
+        "width": 67.73958587646484
+      },
+      {
+        "height": 21,
+        "title": "Deloitte 德勤",
+        "width": 79.38542175292969
+      },
+      {
+        "height": 21,
+        "title": "Navi Material CRM",
+        "width": 111.83333587646484
+      }
+    ],
+    "touchAction": "pan-y"
+  },
+  {
+    "locale": "zh",
+    "width": 360,
+    "canvas": 1,
+    "clientWidth": 345,
+    "controls": [
+      {
+        "height": 44,
+        "label": "作品",
+        "width": 46
+      },
+      {
+        "height": 44,
+        "label": "关于我",
+        "width": 58
+      },
+      {
+        "height": 44,
+        "label": "EN",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "中文",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "向左旋转方块",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "复位方块视角",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "向右旋转方块",
+        "width": 44
+      }
+    ],
+    "mode": "webgl",
+    "outOfBounds": [],
+    "overflow": 0,
+    "ready": "true",
+    "titles": [
+      {
+        "height": 21,
+        "title": "Tax Engine",
+        "width": 67.73958587646484
+      },
+      {
+        "height": 21,
+        "title": "Deloitte 德勤",
+        "width": 79.38542175292969
+      },
+      {
+        "height": 21,
+        "title": "Navi Material CRM",
+        "width": 111.83333587646484
+      }
+    ],
+    "touchAction": "pan-y"
+  },
+  {
+    "locale": "zh",
+    "width": 390,
+    "canvas": 1,
+    "clientWidth": 375,
+    "controls": [
+      {
+        "height": 44,
+        "label": "作品",
+        "width": 46
+      },
+      {
+        "height": 44,
+        "label": "关于我",
+        "width": 58
+      },
+      {
+        "height": 44,
+        "label": "EN",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "中文",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "向左旋转方块",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "复位方块视角",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "向右旋转方块",
+        "width": 44
+      }
+    ],
+    "mode": "webgl",
+    "outOfBounds": [],
+    "overflow": 0,
+    "ready": "true",
+    "titles": [
+      {
+        "height": 21,
+        "title": "Tax Engine",
+        "width": 67.73958587646484
+      },
+      {
+        "height": 21,
+        "title": "Deloitte 德勤",
+        "width": 79.38542175292969
+      },
+      {
+        "height": 21,
+        "title": "Navi Material CRM",
+        "width": 111.83333587646484
+      }
+    ],
+    "touchAction": "pan-y"
+  },
+  {
+    "locale": "zh",
+    "width": 768,
+    "canvas": 1,
+    "clientWidth": 753,
+    "controls": [
+      {
+        "height": 44,
+        "label": "作品",
+        "width": 54
+      },
+      {
+        "height": 44,
+        "label": "关于我",
+        "width": 67
+      },
+      {
+        "height": 44,
+        "label": "EN",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "中文",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "向左旋转方块",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "复位方块视角",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "向右旋转方块",
+        "width": 44
+      }
+    ],
+    "mode": "webgl",
+    "outOfBounds": [],
+    "overflow": 0,
+    "ready": "true",
+    "titles": [
+      {
+        "height": 24,
+        "title": "Tax Engine",
+        "width": 77.39583587646484
+      },
+      {
+        "height": 24,
+        "title": "Deloitte 德勤",
+        "width": 90.69792175292967
+      },
+      {
+        "height": 24,
+        "title": "Navi Material CRM",
+        "width": 127.78125
+      }
+    ],
+    "touchAction": "pan-y"
+  },
+  {
+    "locale": "zh",
+    "width": 1024,
+    "canvas": 1,
+    "clientWidth": 1009,
+    "controls": [
+      {
+        "height": 44,
+        "label": "作品",
+        "width": 54
+      },
+      {
+        "height": 44,
+        "label": "关于我",
+        "width": 67
+      },
+      {
+        "height": 44,
+        "label": "EN",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "中文",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "向左旋转方块",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "复位方块视角",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "向右旋转方块",
+        "width": 44
+      }
+    ],
+    "mode": "webgl",
+    "outOfBounds": [],
+    "overflow": 0,
+    "ready": "true",
+    "titles": [
+      {
+        "height": 24,
+        "title": "Tax Engine",
+        "width": 77.39583587646484
+      },
+      {
+        "height": 24,
+        "title": "Deloitte 德勤",
+        "width": 90.69792175292967
+      },
+      {
+        "height": 24,
+        "title": "Navi Material CRM",
+        "width": 127.78125
+      }
+    ],
+    "touchAction": "pan-y"
+  },
+  {
+    "locale": "zh",
+    "width": 1440,
+    "canvas": 1,
+    "clientWidth": 1425,
+    "controls": [
+      {
+        "height": 44,
+        "label": "作品",
+        "width": 54
+      },
+      {
+        "height": 44,
+        "label": "关于我",
+        "width": 67
+      },
+      {
+        "height": 44,
+        "label": "EN",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "中文",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "向左旋转方块",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "复位方块视角",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "向右旋转方块",
+        "width": 44
+      }
+    ],
+    "mode": "webgl",
+    "outOfBounds": [],
+    "overflow": 0,
+    "ready": "true",
+    "titles": [
+      {
+        "height": 24,
+        "title": "Tax Engine",
+        "width": 77.39583587646484
+      },
+      {
+        "height": 24,
+        "title": "Deloitte 德勤",
+        "width": 90.69792175292967
+      },
+      {
+        "height": 24,
+        "title": "Navi Material CRM",
+        "width": 127.78125
+      }
+    ],
+    "touchAction": "pan-y"
+  },
+  {
+    "locale": "zh",
+    "width": 1920,
+    "canvas": 1,
+    "clientWidth": 1905,
+    "controls": [
+      {
+        "height": 44,
+        "label": "作品",
+        "width": 54
+      },
+      {
+        "height": 44,
+        "label": "关于我",
+        "width": 67
+      },
+      {
+        "height": 44,
+        "label": "EN",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "中文",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "向左旋转方块",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "复位方块视角",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "向右旋转方块",
+        "width": 44
+      }
+    ],
+    "mode": "webgl",
+    "outOfBounds": [],
+    "overflow": 0,
+    "ready": "true",
+    "titles": [
+      {
+        "height": 24,
+        "title": "Tax Engine",
+        "width": 77.39583587646484
+      },
+      {
+        "height": 24,
+        "title": "Deloitte 德勤",
+        "width": 90.69792175292967
+      },
+      {
+        "height": 24,
+        "title": "Navi Material CRM",
+        "width": 127.78125
+      }
+    ],
+    "touchAction": "pan-y"
+  },
+  {
+    "locale": "en",
+    "width": 320,
+    "canvas": 1,
+    "clientWidth": 305,
+    "controls": [
+      {
+        "height": 44,
+        "label": "Work",
+        "width": 49.88541793823242
+      },
+      {
+        "height": 44,
+        "label": "About",
+        "width": 55.73958587646485
+      },
+      {
+        "height": 44,
+        "label": "EN",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "中文",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "Rotate cube left",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "Reset cube orientation",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "Rotate cube right",
+        "width": 44
+      }
+    ],
+    "mode": "webgl",
+    "outOfBounds": [],
+    "overflow": 0,
+    "ready": "true",
+    "titles": [
+      {
+        "height": 21,
+        "title": "Tax Engine",
+        "width": 68.72917175292969
+      },
+      {
+        "height": 21,
+        "title": "Deloitte",
+        "width": 50.39583587646485
+      },
+      {
+        "height": 21,
+        "title": "Navi Material CRM",
+        "width": 113.5
+      }
+    ],
+    "touchAction": "pan-y"
+  },
+  {
+    "locale": "en",
+    "width": 360,
+    "canvas": 1,
+    "clientWidth": 345,
+    "controls": [
+      {
+        "height": 44,
+        "label": "Work",
+        "width": 49.88541793823242
+      },
+      {
+        "height": 44,
+        "label": "About",
+        "width": 55.73958587646485
+      },
+      {
+        "height": 44,
+        "label": "EN",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "中文",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "Rotate cube left",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "Reset cube orientation",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "Rotate cube right",
+        "width": 44
+      }
+    ],
+    "mode": "webgl",
+    "outOfBounds": [],
+    "overflow": 0,
+    "ready": "true",
+    "titles": [
+      {
+        "height": 21,
+        "title": "Tax Engine",
+        "width": 68.72917175292969
+      },
+      {
+        "height": 21,
+        "title": "Deloitte",
+        "width": 50.39583587646485
+      },
+      {
+        "height": 21,
+        "title": "Navi Material CRM",
+        "width": 113.5
+      }
+    ],
+    "touchAction": "pan-y"
+  },
+  {
+    "locale": "en",
+    "width": 390,
+    "canvas": 1,
+    "clientWidth": 375,
+    "controls": [
+      {
+        "height": 44,
+        "label": "Work",
+        "width": 49.88541793823242
+      },
+      {
+        "height": 44,
+        "label": "About",
+        "width": 55.73958587646485
+      },
+      {
+        "height": 44,
+        "label": "EN",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "中文",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "Rotate cube left",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "Reset cube orientation",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "Rotate cube right",
+        "width": 44
+      }
+    ],
+    "mode": "webgl",
+    "outOfBounds": [],
+    "overflow": 0,
+    "ready": "true",
+    "titles": [
+      {
+        "height": 21,
+        "title": "Tax Engine",
+        "width": 68.72917175292969
+      },
+      {
+        "height": 21,
+        "title": "Deloitte",
+        "width": 50.39583587646485
+      },
+      {
+        "height": 21,
+        "title": "Navi Material CRM",
+        "width": 113.5
+      }
+    ],
+    "touchAction": "pan-y"
+  },
+  {
+    "locale": "en",
+    "width": 768,
+    "canvas": 1,
+    "clientWidth": 753,
+    "controls": [
+      {
+        "height": 44,
+        "label": "Work",
+        "width": 58.20833587646485
+      },
+      {
+        "height": 44,
+        "label": "About",
+        "width": 64.55208587646484
+      },
+      {
+        "height": 44,
+        "label": "EN",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "中文",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "Rotate cube left",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "Reset cube orientation",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "Rotate cube right",
+        "width": 44
+      }
+    ],
+    "mode": "webgl",
+    "outOfBounds": [],
+    "overflow": 0,
+    "ready": "true",
+    "titles": [
+      {
+        "height": 24,
+        "title": "Tax Engine",
+        "width": 78.52083587646484
+      },
+      {
+        "height": 24,
+        "title": "Deloitte",
+        "width": 57.57291793823242
+      },
+      {
+        "height": 24,
+        "title": "Navi Material CRM",
+        "width": 129.6875
+      }
+    ],
+    "touchAction": "pan-y"
+  },
+  {
+    "locale": "en",
+    "width": 1024,
+    "canvas": 1,
+    "clientWidth": 1009,
+    "controls": [
+      {
+        "height": 44,
+        "label": "Work",
+        "width": 58.20833587646485
+      },
+      {
+        "height": 44,
+        "label": "About",
+        "width": 64.55208587646484
+      },
+      {
+        "height": 44,
+        "label": "EN",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "中文",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "Rotate cube left",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "Reset cube orientation",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "Rotate cube right",
+        "width": 44
+      }
+    ],
+    "mode": "webgl",
+    "outOfBounds": [],
+    "overflow": 0,
+    "ready": "true",
+    "titles": [
+      {
+        "height": 24,
+        "title": "Tax Engine",
+        "width": 78.52083587646484
+      },
+      {
+        "height": 24,
+        "title": "Deloitte",
+        "width": 57.57291793823242
+      },
+      {
+        "height": 24,
+        "title": "Navi Material CRM",
+        "width": 129.6875
+      }
+    ],
+    "touchAction": "pan-y"
+  },
+  {
+    "locale": "en",
+    "width": 1440,
+    "canvas": 1,
+    "clientWidth": 1425,
+    "controls": [
+      {
+        "height": 44,
+        "label": "Work",
+        "width": 58.20833587646485
+      },
+      {
+        "height": 44,
+        "label": "About",
+        "width": 64.55208587646484
+      },
+      {
+        "height": 44,
+        "label": "EN",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "中文",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "Rotate cube left",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "Reset cube orientation",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "Rotate cube right",
+        "width": 44
+      }
+    ],
+    "mode": "webgl",
+    "outOfBounds": [],
+    "overflow": 0,
+    "ready": "true",
+    "titles": [
+      {
+        "height": 24,
+        "title": "Tax Engine",
+        "width": 78.52083587646484
+      },
+      {
+        "height": 24,
+        "title": "Deloitte",
+        "width": 57.57291793823242
+      },
+      {
+        "height": 24,
+        "title": "Navi Material CRM",
+        "width": 129.6875
+      }
+    ],
+    "touchAction": "pan-y"
+  },
+  {
+    "locale": "en",
+    "width": 1920,
+    "canvas": 1,
+    "clientWidth": 1905,
+    "controls": [
+      {
+        "height": 44,
+        "label": "Work",
+        "width": 58.20833587646485
+      },
+      {
+        "height": 44,
+        "label": "About",
+        "width": 64.55208587646484
+      },
+      {
+        "height": 44,
+        "label": "EN",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "中文",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "Rotate cube left",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "Reset cube orientation",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "label": "Rotate cube right",
+        "width": 44
+      }
+    ],
+    "mode": "webgl",
+    "outOfBounds": [],
+    "overflow": 0,
+    "ready": "true",
+    "titles": [
+      {
+        "height": 24,
+        "title": "Tax Engine",
+        "width": 78.52083587646484
+      },
+      {
+        "height": 24,
+        "title": "Deloitte",
+        "width": 57.57291793823242
+      },
+      {
+        "height": 24,
+        "title": "Navi Material CRM",
+        "width": 129.6875
+      }
+    ],
+    "touchAction": "pan-y"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "check": "zh-refresh-early",
+    "liveOpacity": "0",
+    "mode": "webgl",
+    "overflow": false,
+    "ready": "false",
+    "staticPortraits": 0
+  },
+  {
+    "canvas": 1,
+    "check": "zh-refresh-ready",
+    "controls": 3,
+    "overflow": false,
+    "ready": "true",
+    "staticPortraits": 0
+  },
+  {
+    "check": "en-refresh-early",
+    "liveOpacity": "0",
+    "overflow": false,
+    "ready": "false",
+    "staticPortraits": 0
+  },
+  {
+    "canvas": 1,
+    "check": "en-refresh-ready",
+    "liveOpacity": "0.990393",
+    "overflow": false,
+    "ready": "true",
+    "staticPortraits": 0
+  },
+  {
+    "check": "en-list-keyboard",
+    "headings": [
+      "Tax EngineT#aXxD  E/n0gTi/nEeD",
+      "DeloitteD#eXlDo0i/t0tTe/",
+      "Navi Material CRMN#aXvDi0  M0aTt/eErDi}aMl;  CARWMV"
+    ],
+    "open": true,
+    "scramble": []
+  },
+  {
+    "canvas": 0,
+    "check": "static-fallback",
+    "controls": 0,
+    "mode": "fallback",
+    "portraits": 1
+  },
+  {
+    "canvas": 0,
+    "check": "reduced-motion",
+    "controls": 0,
+    "mode": "reduced-motion",
+    "portraits": 1,
+    "scrollBehavior": "auto"
+  }
+]

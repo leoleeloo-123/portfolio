@@ -1,0 +1,42 @@
+{
+  "bottomClamping": [
+    {
+      "locale": "en",
+      "canvas": 1,
+      "fraction": 0.4704430292280699,
+      "height": 156.125,
+      "open": true,
+      "phase": "2",
+      "top": 19.885417938232425
+    },
+    {
+      "locale": "zh",
+      "canvas": 1,
+      "fraction": -0.35686115200017005,
+      "height": 132.08334350585938,
+      "open": true,
+      "phase": "2",
+      "top": 140.46875
+    }
+  ],
+  "withinRange": [
+    {
+      "locale": "zh",
+      "fraction": 0.5567034415969846,
+      "height": 132.08334350585938,
+      "maxScroll": 1041,
+      "open": true,
+      "scrollY": 917.3333129882812,
+      "top": 19.80208396911621
+    },
+    {
+      "locale": "en",
+      "fraction": 0.5558446910115984,
+      "height": 156.125,
+      "maxScroll": 1165,
+      "open": true,
+      "scrollY": 931.3333129882812,
+      "top": 6.552083492279053
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "mode": "fallback",
+    "canvas": 0,
+    "controls": 0,
+    "overflow": 0,
+    "portrait": "/images/leo-portrait.png",
+    "scrollBehavior": "smooth",
+    "states": [
+      "pending",
+      "pending",
+      "pending",
+      "pending",
+      "pending",
+      "pending"
+    ]
+  },
+  {
+    "mode": "reduced-motion",
+    "canvas": 0,
+    "controls": 0,
+    "overflow": 0,
+    "portrait": "/images/leo-portrait.png",
+    "scrollBehavior": "auto",
+    "states": [
+      "complete",
+      "complete",
+      "complete",
+      "complete",
+      "complete",
+      "complete"
+    ]
+  }
+]

@@ -1,0 +1,71 @@
+{
+  "interaction": [
+    {
+      "check": "mouse-expansion-and-hover",
+      "opacities": [
+        "0.5",
+        "1",
+        "0.5"
+      ],
+      "open": true,
+      "summaryVisible": true
+    },
+    {
+      "check": "keyboard-enter-close",
+      "open": false
+    },
+    {
+      "check": "keyboard-enter-open",
+      "open": true
+    }
+  ],
+  "scroll": [
+    {
+      "label": "top",
+      "phase": "0",
+      "scrollY": 0
+    },
+    {
+      "label": "forward",
+      "phase": "1",
+      "scrollY": 253.3333282470703
+    },
+    {
+      "label": "reverse",
+      "phase": "0",
+      "scrollY": 0
+    }
+  ],
+  "logs": [
+    {
+      "level": "warn",
+      "message": "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+      "timestamp": "2026-10-04T09:43:09.296Z",
+      "url": "http://127.0.0.1:4173/assets/SceneCanvas-Cegh5Btw.js"
+    },
+    {
+      "level": "warn",
+      "message": "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+      "timestamp": "2026-10-04T09:46:54.242Z",
+      "url": "http://127.0.0.1:4173/assets/SceneCanvas-DfGGZfTp.js"
+    },
+    {
+      "level": "warn",
+      "message": "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+      "timestamp": "2026-10-04T09:46:55.933Z",
+      "url": "http://127.0.0.1:4173/assets/SceneCanvas-DfGGZfTp.js"
+    },
+    {
+      "level": "warn",
+      "message": "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+      "timestamp": "2026-10-04T10:00:20.360Z",
+      "url": "http://127.0.0.1:4173/assets/SceneCanvas-CsS4FbQu.js"
+    },
+    {
+      "level": "warn",
+      "message": "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+      "timestamp": "2026-10-04T10:03:03.812Z",
+      "url": "http://127.0.0.1:4173/assets/SceneCanvas-CsS4FbQu.js"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "active": "向左旋转方块",
+  "canvas": 1,
+  "focusVisible": true,
+  "mode": "webgl",
+  "overflow": 0,
+  "ready": "true",
+  "viewport": [
+    327,
+    604
+  ]
+}
