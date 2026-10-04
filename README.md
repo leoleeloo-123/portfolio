@@ -1,6 +1,6 @@
 # Leo Li — Interactive Systems Portfolio
 
-A bilingual personal portfolio with a portrait inside an interactive crystal cube, a compact navigation dock and a single-column project index. The current visual base is approved; project copy and chronology remain provisional.
+A bilingual personal portfolio with a screened portrait, central refractive typography/prism and an abstract data-flow field. A blue/indigo atmosphere fades into a compact single-column project index. The current hero refinement is ready for visual review; project copy and chronology remain provisional.
 
 ## Run locally
 
@@ -20,14 +20,15 @@ npm run build
 npm run preview
 ```
 
-The production preview normally uses port 4173. `dist/` is generated and ignored. No deployment is configured.
+The production preview normally uses port 4173. `dist/` is generated and ignored. The existing Vercel project `leo-li` builds the GitHub `main` branch with the Vite preset and Node 24. `vercel.json` serves the app shell for `/en/` and `/zh/` direct visits and refreshes; asset paths remain ordinary static files.
 
 ## Current experience
 
-- Six-band glass refraction, portrait depth, drag with inertia, idle rotation, accessible left/right/reset controls and three reversible scroll poses.
+- A cool portrait sits outside the glass on the left; a minimal point/trace field supports the right. Mobile places these supporting layers beneath the central prism rather than shrinking the desktop layout.
+- Six-band typography/atmosphere refraction, drag with inertia, idle rotation, accessible left/right/reset controls and three reversible scroll poses.
 - Compact project rows with character-scramble reveals, hover/focus dimming and native expandable summaries. Dates stay unset until verified.
 - English and Simplified Chinese routes preserve the reading anchor and scene identity on language switches.
-- Refresh reserves the scene area and reveals the cube only after the portrait texture and complete first frame are ready. Static portraits are reserved for reduced motion and unavailable WebGL.
+- Refresh reveals the prism after its localized type texture and complete first frame are ready. The portrait loads independently in the DOM. Reduced motion, unavailable WebGL and 30 seconds of visible loading show a static prism with the same supporting portrait. Failed or timed-out loads offer a reload action; hidden/offscreen time does not consume the loading budget.
 - Keyboard focus, DOM text and ordinary vertical scrolling remain available. Review alternatives: `?scene=static` and `?motion=reduce`.
 
 ## Where to edit
@@ -49,9 +50,9 @@ The production preview normally uses port 4173. `dist/` is generated and ignored
 - [Project brief](docs/project-brief.md): scope, facts and deferred content.
 - [Visual direction](docs/visual-direction.md): design system, references and motion.
 - [Progress](docs/progress.md): current checks, cleanup and remaining limits.
-- [Visual review](docs/reference-alignment-review.md): detailed interaction observations and [screenshots/recording](evidence/reference-alignment/).
+- [Hero review](docs/hero-composition-review.md): current desktop/mobile composition and interaction checks, with [screenshots](evidence/atmosphere-hero/).
 - [Portrait provenance](docs/asset-processing.md): image processing and fidelity limits.
 
 Historical drafts, unused sections, raw recordings and the original photograph are retained locally under `archive/`, excluded from Git and the app build. Only the transparent portrait derivative is served by the website. Manrope's OFL license is included in `public/licenses/`.
 
-Repository: [leoleeloo-123/portfolio](https://github.com/leoleeloo-123/portfolio). Repository synchronization is authorized; deployment and detailed case-study expansion remain separate decisions. Physical-phone/GPU performance and production hosting/SEO still need review.
+Repository: [leoleeloo-123/portfolio](https://github.com/leoleeloo-123/portfolio). Production: [leo-li.vercel.app](https://leo-li.vercel.app/). The owner authorized repair of this existing deployment. Detailed case-study expansion, physical-phone/GPU performance and SEO remain separate review items.

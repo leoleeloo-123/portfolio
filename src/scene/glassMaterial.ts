@@ -12,12 +12,10 @@ void main() {
 `
 
 // Six spectral bands and two surface passes follow the supplied optical recipe.
-// Only a small projected face region is protected; the rest stays fully refractive.
+// The prism refracts type and atmosphere; no photographic plane or face mask.
 const fragmentShader = /* glsl */ `
 uniform sampler2D uTexture;
 uniform vec2 uResolution;
-uniform vec2 uFaceCenter;
-uniform vec2 uFaceRadius;
 uniform float uBackside;
 uniform float uChromatic;
 uniform float uPower;
@@ -38,12 +36,10 @@ void main() {
   if (uBackside > 0.5) normal = -normal;
   vec3 eye = normalize(vEye);
   float incidence = clamp(1.0 + dot(eye, normal), 0.0, 1.0);
-  float face = 1.0 - smoothstep(0.75, 1.2, length((uv - uFaceCenter) / uFaceRadius));
-  float protection = face * (1.0 - smoothstep(0.28, 0.75, incidence));
-  float power = uPower * mix(1.0, 0.12, protection);
+  float power = uPower;
   vec3 color = vec3(0.0);
   for (int i = 0; i < SAMPLES; i++) {
-    float slide = float(i) / float(SAMPLES) * 0.045 * mix(1.0, 0.12, protection);
+    float slide = float(i) / float(SAMPLES) * 0.045;
     vec3 R = bandSample(uv, eye, normal, 1.15, slide, power);
     vec3 Y = bandSample(uv, eye, normal, 1.16, slide, power);
     vec3 G = bandSample(uv, eye, normal, 1.18, slide * 2.0, power);
@@ -65,8 +61,8 @@ void main() {
   color = mix(vec3(luma), color, 1.08);
   float shine = specular(vec3(-1.0, 1.0, 1.0), normal, eye, 90.0, 0.02);
   shine += 0.6 * specular(vec3(1.0, 1.0, -1.0), normal, eye, 54.0, 0.01);
-  color += shine * mix(1.0, 0.35, uBackside) * mix(1.0, 0.12, face);
-  float fresnel = pow(incidence, 5.0) * mix(1.0, 0.60, face);
+  color += shine * mix(1.0, 0.35, uBackside);
+  float fresnel = pow(incidence, 5.0);
   color = mix(color, vec3(1.0), fresnel * mix(0.55, 0.25, uBackside));
   color += vec3(0.004, 0.005, 0.007);
   gl_FragColor = vec4(max(color, 0.0), 1.0);
@@ -79,10 +75,8 @@ export function createGlassMaterial(back: boolean, samples: number, chromatic: n
     defines: { SAMPLES: samples },
     uniforms: {
       uTexture: { value: null }, uResolution: { value: new Vector2(1, 1) },
-      uFaceCenter: { value: new Vector2(0.5, 0.58) },
-      uFaceRadius: { value: new Vector2(0.08, 0.14) },
       uBackside: { value: back ? 1 : 0 }, uChromatic: { value: chromatic },
-      uPower: { value: back ? 0.22 : 0.30 },
+      uPower: { value: back ? 0.18 : 0.24 },
     },
     vertexShader, fragmentShader, side: back ? BackSide : FrontSide, toneMapped: false,
   })
@@ -115,13 +109,25 @@ export function createHeadlineCanvas(lines: readonly string[], aspect = 1.5) {
   return canvas
 }
 
-/** A soft environment behind the photo complements the sharp typographic layer. */
+/** A cool environment belongs to the optical capture, not the visible canvas. */
+export function createEnvironmentCanvas() {
+  const { canvas, context } = canvasWithContext(768)
+  const gradient = context.createLinearGradient(0, 0, 300, 768)
+  gradient.addColorStop(0, '#24386b')
+  gradient.addColorStop(.45, '#202544')
+  gradient.addColorStop(1, '#101623')
+  context.fillStyle = gradient
+  context.fillRect(0, 0, 768, 768)
+  return canvas
+}
+
+/** Diffuse light gives the typography depth without adding another focal object. */
 export function createAtmosphereCanvas() {
   const { canvas, context } = canvasWithContext(768)
   const glow = context.createRadialGradient(410, 290, 12, 360, 360, 410)
-  glow.addColorStop(0, 'rgba(137, 169, 195, .70)')
-  glow.addColorStop(0.40, 'rgba(70, 113, 131, .40)')
-  glow.addColorStop(0.72, 'rgba(37, 60, 82, .23)')
+  glow.addColorStop(0, 'rgba(142, 156, 224, .58)')
+  glow.addColorStop(0.40, 'rgba(80, 102, 189, .32)')
+  glow.addColorStop(0.72, 'rgba(62, 62, 128, .18)')
   glow.addColorStop(1, 'rgba(16, 17, 20, 0)')
   context.fillStyle = glow
   context.fillRect(0, 0, 768, 768)

@@ -4,14 +4,14 @@ import type { RefObject } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import type { MotionValue } from 'motion/react'
 import {
-  CanvasTexture, Color, DoubleSide, Euler, Group, HalfFloatType, LinearFilter, Mesh,
+  CanvasTexture, Color, Euler, Group, HalfFloatType, LinearFilter, Mesh,
   MeshBasicMaterial, NoToneMapping, PerspectiveCamera, PlaneGeometry, Quaternion,
-  Scene, SRGBColorSpace, TextureLoader, UnsignedByteType, Vector2, Vector3, WebGLRenderTarget,
+  Scene, SRGBColorSpace, UnsignedByteType, Vector2, Vector3, WebGLRenderTarget,
 } from 'three'
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js'
 import { GLASS_POSES, SCENE, clampProgress, smoothRange } from './config'
 import type { GlassCommand } from './config'
-import { createHeadlineCanvas, createAtmosphereCanvas, createGlassMaterial } from './glassMaterial'
+import { createHeadlineCanvas, createAtmosphereCanvas, createEnvironmentCanvas, createGlassMaterial } from './glassMaterial'
 import i18n from '../i18n/setup'
 
 type SceneCanvasProps = {
@@ -25,9 +25,9 @@ const lerp = (a: number, b: number, t: number) => a + (b - a) * t
 const xAxis = new Vector3(1, 0, 0)
 const yAxis = new Vector3(0, 1, 0)
 
-function PortraitGlass({ progress, command, active, onFailure, onReady }: SceneCanvasProps) {
+function TypographyGlass({ progress, command, active, onFailure, onReady }: SceneCanvasProps) {
   const content = useRef<Group>(null)
-  const portrait = useRef<Mesh>(null)
+  const environment = useRef<Mesh>(null)
   const atmosphere = useRef<Mesh>(null)
   const headline = useRef<Mesh>(null)
   const current = useRef(clampProgress(progress.get()))
@@ -37,9 +37,9 @@ function PortraitGlass({ progress, command, active, onFailure, onReady }: SceneC
     velocityX: 0, velocityY: 0, sinceRelease: 1.6, turn: 0, resetting: false,
     x: 0, y: 0, targetX: 0, targetY: 0,
   })
-  const portraitImage = useRef({ loaded: false, aspect: 0.72 })
   const readyFrame = useRef<number | undefined>(undefined)
   const hasRendered = useRef(false)
+  const headlineReady = useRef(false)
   const { camera, size, viewport, gl, scene, invalidate } = useThree()
 
   const resources = useMemo(() => {
@@ -67,10 +67,9 @@ function PortraitGlass({ progress, command, active, onFailure, onReady }: SceneC
       atmosphereTexture, planeGeometry: new PlaneGeometry(1, 1),
       atmosphereMaterial: new MeshBasicMaterial({ map: atmosphereTexture, transparent: true, opacity: GLASS_POSES[0].atmosphere, depthWrite: false, toneMapped: false }),
       headlineMaterial: new MeshBasicMaterial({ map: headlineTexture, transparent: true, depthWrite: false, toneMapped: false }),
-      portraitMaterial: new MeshBasicMaterial({ side: DoubleSide, transparent: true, opacity: 0, depthWrite: false, toneMapped: false }),
+      environmentMaterial: new MeshBasicMaterial({ map: texture(createEnvironmentCanvas()), depthWrite: false, toneMapped: false }),
       bufferSize: new Vector2(), clearColor: new Color(),
       baseEuler: new Euler(), baseRotation: new Quaternion(), step: new Quaternion(), identity: new Quaternion(),
-      faceCenter: new Vector3(), faceRight: new Vector3(), faceTop: new Vector3(),
     }
   }, [gl])
 
@@ -86,6 +85,7 @@ function PortraitGlass({ progress, command, active, onFailure, onReady }: SceneC
       const previous = resources.headlineMaterial.map
       resources.headlineMaterial.map = texture
       resources.headlineMaterial.needsUpdate = true
+      headlineReady.current = true
       previous?.dispose()
       invalidate()
     }
@@ -101,29 +101,6 @@ function PortraitGlass({ progress, command, active, onFailure, onReady }: SceneC
     }
   }, [invalidate, resources, size.height, size.width])
 
-  useEffect(() => {
-    let cancelled = false
-    portraitImage.current.loaded = false
-    const texture = new TextureLoader().load('/images/leo-portrait.png', loaded => {
-      if (cancelled) return
-      const image = loaded.image as HTMLImageElement
-      portraitImage.current = { loaded: true, aspect: image.width / image.height }
-      loaded.colorSpace = SRGBColorSpace
-      loaded.minFilter = LinearFilter
-      loaded.magFilter = LinearFilter
-      loaded.generateMipmaps = false
-      resources.portraitMaterial.map = loaded
-      resources.portraitMaterial.opacity = 1
-      resources.portraitMaterial.needsUpdate = true
-      invalidate()
-    }, undefined, error => {
-      if (cancelled) return
-      console.error('Portrait texture loading failed', error)
-      onFailure()
-    })
-    return () => { cancelled = true; texture.dispose() }
-  }, [invalidate, onFailure, resources])
-
   useEffect(() => () => {
     if (readyFrame.current !== undefined) cancelAnimationFrame(readyFrame.current)
     resources.geometry.dispose()
@@ -135,7 +112,8 @@ function PortraitGlass({ progress, command, active, onFailure, onReady }: SceneC
     resources.planeGeometry.dispose()
     resources.atmosphereMaterial.dispose()
     resources.headlineMaterial.dispose()
-    resources.portraitMaterial.dispose()
+    resources.environmentMaterial.map?.dispose()
+    resources.environmentMaterial.dispose()
   }, [resources])
 
   useLayoutEffect(() => {
@@ -151,6 +129,8 @@ function PortraitGlass({ progress, command, active, onFailure, onReady }: SceneC
     camera.updateMatrixWorld()
     const backgroundHeight = height * (1 + 2.15 / camera.position.z)
     headline.current?.scale.set(backgroundHeight * aspect, backgroundHeight, 1)
+    const environmentHeight = height * (1 + 3 / camera.position.z)
+    environment.current?.scale.set(environmentHeight * aspect, environmentHeight, 1)
     const limit = phone ? SCENE.refraction.phoneEdge : SCENE.refraction.desktopEdge
     const factor = Math.min(viewport.dpr, limit / Math.max(size.width, size.height))
     const width = Math.max(1, Math.round(size.width * factor))
@@ -250,7 +230,7 @@ function PortraitGlass({ progress, command, active, onFailure, onReady }: SceneC
 
   // Demand rendering continues only while the visible scene has its intentional idle spin.
   useFrame((_, delta) => {
-    if (!active || !content.current || !portrait.current || !atmosphere.current) return
+    if (!active || !content.current || !atmosphere.current || !environment.current) return
     const dt = Math.min(delta, SCENE.maxDelta)
     const target = clampProgress(progress.get())
     current.current = lerp(current.current, target, 1 - Math.exp(-SCENE.damping * dt))
@@ -299,27 +279,16 @@ function PortraitGlass({ progress, command, active, onFailure, onReady }: SceneC
     content.current.scale.setScalar(lerp(from.scale, to.scale, t))
     resources.shellGroup.quaternion.copy(content.current.quaternion)
     resources.shellGroup.scale.copy(content.current.scale)
-    // A camera-facing photographic plane inside the rotating shell retains identity.
-    portrait.current.quaternion.copy(content.current.quaternion).invert()
-    portrait.current.position.set(state.x * 0.025, -0.035 - state.y * 0.015, lerp(from.portraitDepth, to.portraitDepth, t))
-    portrait.current.scale.set(SCENE.portraitHeight * portraitImage.current.aspect, SCENE.portraitHeight, 1)
     atmosphere.current.position.set(-state.x * 0.08, state.y * 0.04, -0.8)
     resources.atmosphereMaterial.opacity = lerp(from.atmosphere, to.atmosphere, t)
     scene.updateMatrixWorld()
-    const center = portrait.current.localToWorld(resources.faceCenter.set(0, 0.13, 0)).project(camera)
-    const right = portrait.current.localToWorld(resources.faceRight.set(0.24, 0.13, 0)).project(camera)
-    const top = portrait.current.localToWorld(resources.faceTop.set(0, 0.36, 0)).project(camera)
-    for (const material of [resources.front, resources.back]) {
-      material.uniforms.uFaceCenter.value.set(center.x * 0.5 + 0.5, center.y * 0.5 + 0.5)
-      material.uniforms.uFaceRadius.value.set(Math.max(0.001, Math.abs(right.x - center.x) * 0.5), Math.max(0.001, Math.abs(top.y - center.y) * 0.5))
-    }
-
     const previousTarget = gl.getRenderTarget()
     const previousAutoClear = gl.autoClear
     const previousAlpha = gl.getClearAlpha()
     gl.getClearColor(resources.clearColor)
     try {
       gl.setClearColor(SCENE.colors.background, 1)
+      environment.current.visible = true
       gl.autoClear = true
       gl.setRenderTarget(resources.targets[0])
       gl.render(scene, camera)
@@ -331,6 +300,10 @@ function PortraitGlass({ progress, command, active, onFailure, onReady }: SceneC
       resources.back.uniforms.uTexture.value = resources.targets[0].texture
       gl.render(resources.glassScene, camera)
       gl.setRenderTarget(previousTarget)
+      // The gradient fills the optical captures, while the final canvas stays
+      // transparent around the prism and type, blending into the CSS atmosphere.
+      environment.current.visible = false
+      gl.setClearColor(SCENE.colors.background, 0)
       gl.autoClear = true
       gl.render(scene, camera)
       gl.autoClear = false
@@ -340,15 +313,16 @@ function PortraitGlass({ progress, command, active, onFailure, onReady }: SceneC
       gl.getDrawingBufferSize(resources.bufferSize)
       resources.front.uniforms.uResolution.value.copy(resources.bufferSize)
       gl.render(resources.glassScene, camera)
-      if (portraitImage.current.loaded && !hasRendered.current) {
+      if (headlineReady.current && !hasRendered.current) {
         hasRendered.current = true
         readyFrame.current = requestAnimationFrame(() => onReady?.())
       }
     } catch (error) {
-      console.error('Portrait glass rendering failed', error)
+      console.error('Typography glass rendering failed', error)
       onFailure()
       return
     } finally {
+      environment.current.visible = true
       gl.setRenderTarget(previousTarget)
       gl.autoClear = previousAutoClear
       gl.setClearColor(resources.clearColor, previousAlpha)
@@ -358,13 +332,13 @@ function PortraitGlass({ progress, command, active, onFailure, onReady }: SceneC
 
   return (
     <>
+      <mesh ref={environment} position={[0, 0, -3]} scale={[7.2, 4.8, 1]}
+        geometry={resources.planeGeometry} material={resources.environmentMaterial} renderOrder={-2} dispose={null} />
       <mesh ref={headline} position={[0, 0, -2.15]} scale={[7.2, 4.8, 1]}
         geometry={resources.planeGeometry} material={resources.headlineMaterial} renderOrder={-1} dispose={null} />
       <group ref={content} rotation={GLASS_POSES[0].rotation} dispose={null}>
         <mesh ref={atmosphere} position={[0, 0, -0.8]} scale={[2.5, 2.5, 1]}
           geometry={resources.planeGeometry} material={resources.atmosphereMaterial} renderOrder={0} />
-        <mesh ref={portrait} position={[0, -0.035, GLASS_POSES[0].portraitDepth]}
-          geometry={resources.planeGeometry} material={resources.portraitMaterial} renderOrder={1} />
       </group>
     </>
   )
@@ -380,7 +354,7 @@ export default function SceneCanvas(props: SceneCanvasProps) {
         gl.outputColorSpace = SRGBColorSpace
         gl.setClearColor(SCENE.colors.background, 0)
       }} style={{ touchAction: 'pan-y' }}>
-      <PortraitGlass {...props} />
+      <TypographyGlass {...props} />
     </Canvas>
   )
 }

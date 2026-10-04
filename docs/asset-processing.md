@@ -1,11 +1,11 @@
 # Portrait asset provenance
 
-The owner supplied a professional headshot and authorized cropping and background removal on 2026-10-03.
+The owner supplied a new transparent arms-crossed professional portrait on 2026-10-04 for the left hero layer.
 
-- Public derivative: `public/images/leo-portrait.png`, 1122 × 1402, RGBA, 2,034,462 bytes. Actual transparent and partially transparent pixels were inspected.
-- Method: built-in imagegen background-removal edit with transparency enabled. The runtime serves the resulting local image; it calls no image service.
-- The portrait retains hair, shoulders and upper torso. This was a generative edit; fine edges and facial fidelity should be compared with the original, rather than assumed to be pixel-identical.
-- The unchanged original and full edit record are retained in the Git-ignored local archive. They are not website assets.
-- The cube's diffuse blue/teal atmosphere is generated in code at a separate depth from the portrait.
+- Active asset: public/images/leo-portrait-professional.png, 1122 × 1402, RGBA, 1,754,183 bytes. Alpha range 0–255 was inspected.
+- The supplied PNG was copied byte-for-byte. No raster edit or regeneration was performed for this revision.
+- A cool SVG filter and CSS screen masks render the texture in the browser. The central WebGL scene contains no portrait texture or photographic plane.
+- The prior portrait derivative is retained locally at archive/2026-10-04/public/images/leo-portrait.png. The earlier original headshot and edit record also remain in the Git-ignored archive.
+- The current source image's creation process was not independently verified; its supplied pixels are used directly.
 
-Manrope is bundled locally from `@fontsource-variable/manrope`. Its OFL-1.1 notice is retained at `public/licenses/manrope-OFL.txt`. Chinese uses system font fallbacks.
+Manrope is bundled locally from @fontsource-variable/manrope; the OFL-1.1 notice ships at public/licenses/manrope-OFL.txt. Chinese uses system font fallbacks. The runtime calls no image generation or external image service.

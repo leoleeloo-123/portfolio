@@ -2,32 +2,34 @@
 
 Leo Li / 李存弘宇 — Professional Interactive Systems Portfolio.
 
-Narrative: Finance & Accounting → Data → Automation → Tax Technology → AI-enabled Systems. Communicate business understanding, individual contribution and usable, maintainable systems without invented engineering titles or self-deprecating framing. Experience balance approximately 80% professional communication and 20% distinctive interaction.
+Narrative: Finance & Accounting → Data → Automation → Tax Technology → AI-enabled Systems. Communicate business understanding and usable systems without invented titles, dates, contribution claims or self-deprecating framing.
 
-## Milestone 1 — current authorized direction
+## Current visual milestone
 
-Build a polished local portrait prototype: compact fixed navigation, one centered interactive crystal cube containing the owner's portrait, a simple bilingual introduction, three provisional index rows and a minimal closing. The page uses one vertical reading column with generous side space. On 2026-10-04 the owner requested closer fidelity to the supplied cube prompt and Maxime's list: stronger spectral refraction, bright refracted background type, drag/inertia/idle rotation, and a compact index with character-scramble reveals and hover dimming. Three related reversible scroll poses remain within the opening hero. This replaces the earlier gentle portrait treatment and long sticky narrative.
+The owner approved the earlier crystal/index base and requested this hero refinement on 2026-10-04: a cool screened professional portrait on the left, central bold typography with a refractive glass prism, and an abstract point/trace workflow on the right. The face no longer belongs inside the cube. A restrained blue/indigo/violet atmosphere fades down into graphite.
 
-Validate overall visual language, portrait clarity and interaction quality before adding detailed content. Keep essential text in the DOM, show a portrait by default on phones, and retain ordinary scrolling. Protect face readability locally without weakening the whole glass material. Titles and short labels resolve from scrambled characters once in view; rows can expand to show existing provisional summaries. Stop for visual review before detailed demos or case studies.
+The center has primary visual weight; both sides support it through matching texture and color. On mobile, the portrait and flow recompose below the central prism. Keep the compact fixed dock, simple bilingual introduction, three provisional project rows, ordinary scrolling and three reversible hero poses. Detailed content expansion remains deferred.
 
-Required stack: React, strict TypeScript, Vite, Tailwind, i18next/react-i18next, Motion, Three.js/React Three Fiber. Small modular app with separate UI, scene configuration, content and translations. No monorepo or backend. npm lockfile only. Check dev and production preview.
+Stack: local React, strict TypeScript, Vite, Tailwind, i18next/react-i18next, Motion and Three.js/React Three Fiber. Separate UI, scene, typed content and translations; one npm lockfile. No backend or live APIs.
 
 ## Localization and accessibility
 
-`/en/`, `/zh/` (`zh-Hans` document metadata), explicit URL priority, saved preference then browser language at `/`, English fallback. Locale switch preserves the intro/timeline row/about reading position, recalculates layout, and does not remount the canvas. Stable anchors, keyboard controls, ordinary scroll, reduced motion and WebGL failure alternatives retain the portrait and DOM text. Target widths 320, 360, 390, 768, 1024, 1440, 1920 in both languages; actual checks for each revision belong in its review record and browser emulation must be distinguished from real phones.
+English /en/ and Simplified Chinese /zh/ with zh-Hans metadata. Explicit URLs take priority; root uses saved preference, supported browser language, then English. Locale switching preserves the logical reading anchor and canvas identity. DOM text, focus, keyboard controls and ordinary vertical scrolling remain essential.
 
-## Content status
+Reduced motion and unavailable WebGL use a static prism while keeping the supporting DOM portrait. Both locales are checked at 320, 360, 390, 768, 1024, 1440 and 1920px. Browser viewport checks are distinguished from physical phones.
 
-Owner-supplied background: USC Accounting and Business Administration, Applied Analytics minor; Deloitte tax technology consulting, automation and review workflows; current Tax Engine work; Navi Material CRM and Fitness OS project directions. Prototype copy is concise and provisional. No private project access is authorized.
+## Factual content
 
-The current index has Tax Engine, Deloitte and Navi Material CRM entries. Their typed `year` fields remain `null`; one shared em dash occupies the year column, with an accessible unconfirmed-year label. Verified years will group adjacent entries automatically. The order establishes visual rhythm and is not a confirmed chronology. Fitness OS remains a future module.
+Owner-supplied background: USC Accounting and Business Administration, Applied Analytics minor; Deloitte tax technology consulting, automation and review workflows; current Tax Engine work; Navi Material CRM and Fitness OS directions. Copy remains provisional and no private project access is authorized.
 
-The owner supplied `professional headshot.jpg` for cropping and background removal. Its unchanged original is retained in the Git-ignored local archive; `public/images/leo-portrait.png` is the local transparent derivative used in the prototype. Processing details belong in asset-processing.md.
+Current index: Tax Engine, Deloitte, Navi Material CRM. All year fields remain null; a shared em dash has an accessible pending-year label. Order establishes visual rhythm, not confirmed chronology. Fitness OS remains a future typed identity.
 
-Pending: public chronology for the timeline; Deloitte final transition date; current public job title/dates; credentials' active status; quantitative outcome publication context; contact details. Do not show Deloitte as current employer or invent missing details. No real business, customer, employee, financial or health data. No credentials in client assets.
+Pending owner input: public chronology, Deloitte transition date, public job titles/dates, active credentials, public quantitative outcomes and contact details. Do not portray Deloitte as current employer or invent these facts. No private client, employee, business, financial or health records.
 
-## Boundaries and future growth
+Current owner-supplied portrait: public/images/leo-portrait-professional.png. Source provenance and prior asset archive are documented in [asset-processing.md](asset-processing.md).
 
-On 2026-10-04 the owner approved the current visual base and authorized syncing this project to `leoleeloo-123/portfolio`. Preserve repository history, keep the archive local and ignored, and do not change repository visibility. Deployment, public previews, cloud resources, backend and live APIs remain outside scope.
+## Boundaries
 
-Future modules: Deloitte workflow visualization, Tax Engine synthetic SaaS demonstration, Navi Material CRM showcase, Fitness OS AI interaction demo. Future publication review: both locales on both hosting targets, route fallback, localized metadata, discoverable language links, prerender/SEO, domain and mainland hosting requirements. No production domain assumed.
+Repository synchronization to leoleeloo-123/portfolio and repair of the owner's existing Vercel project leo-li were authorized on 2026-10-04. The prior approved base is preserved in Git history. Archive remains ignored. Do not change repository visibility, create additional cloud projects, backend or live APIs.
+
+Future modules remain Deloitte workflow visualization, Tax Engine synthetic SaaS demonstration, Navi Material CRM showcase and Fitness OS AI interaction. SEO and additional domain decisions require a later milestone.

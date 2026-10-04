@@ -4,6 +4,8 @@ import { useReducedMotion } from 'motion/react'
 import type { MotionValue } from 'motion/react'
 import { useTranslation } from 'react-i18next'
 import { StaticSystem } from './StaticSystem'
+import { HeroPortrait } from './HeroPortrait'
+import { FlowField } from './FlowField'
 import type { GlassCommand } from '../scene/config'
 
 const SceneCanvas = lazy(() => import('../scene/SceneCanvas'))
@@ -20,15 +22,17 @@ export function SceneStage({ progress, activeStage }: { progress: MotionValue<nu
   const reduced = useReducedMotion()
   const [failed, setFailed] = useState(false)
   const [ready, setReady] = useState(false)
+  const [timedOut, setTimedOut] = useState(false)
   const [active, setActive] = useState(true)
   const stageRef = useRef<HTMLElement>(null)
   const command = useRef<GlassCommand | null>(null)
+  const loadingBudget = useRef(30_000)
   const forcedFallback = new URLSearchParams(location.search).get('scene') === 'static'
   const forcedReduced = new URLSearchParams(location.search).get('motion') === 'reduce'
   const calm = reduced || forcedReduced
   const onFailure = useCallback(() => setFailed(true), [])
   const onReady = useCallback(() => setReady(true), [])
-  const alternative = calm || failed || forcedFallback
+  const alternative = calm || failed || timedOut || forcedFallback
   const mode = calm ? 'reduced-motion' : alternative ? 'fallback' : 'webgl'
 
   useEffect(() => {
@@ -47,39 +51,59 @@ export function SceneStage({ progress, activeStage }: { progress: MotionValue<nu
     }
   }, [])
 
+  // Count only visible loading time: opening a background tab must not consume
+  // the scene's budget before its demand-rendered first frame can run.
+  useEffect(() => {
+    if (alternative || ready || !active) return
+    const started = performance.now()
+    const timeout = window.setTimeout(() => setTimedOut(true), loadingBudget.current)
+    return () => {
+      window.clearTimeout(timeout)
+      loadingBudget.current = Math.max(0, loadingBudget.current - (performance.now() - started))
+    }
+  }, [active, alternative, ready])
+
   const staticView = <StaticSystem />
   return (
-    <aside ref={stageRef} className="scene-stage" data-scene-mode={mode} data-scene-ready={alternative || ready ? 'true' : 'false'} aria-label={t('scene.label')}>
-      <div className="scene-viewport" aria-hidden="true">
-        {alternative ? staticView : (
-          <SceneBoundary fallback={staticView} onFailure={onFailure}>
-            <div className="scene-live" data-ready={ready ? 'true' : 'false'}>
-              <Suspense fallback={null}>
-                <SceneCanvas progress={progress} command={command}
-                  active={active} onFailure={onFailure} onReady={onReady} />
-              </Suspense>
-            </div>
-          </SceneBoundary>
-        )}
+    <aside ref={stageRef} className="scene-stage" data-scene-active={active ? 'true' : 'false'} data-scene-mode={mode} data-scene-ready={alternative || ready ? 'true' : 'false'} aria-label={t('scene.label')}>
+      <HeroPortrait />
+      <FlowField />
+      <p className="sr-only">{t('scene.word1')} / {t('scene.word2')} / {t('scene.word3')}</p>
+      <div className="scene-center">
+        <div className="scene-viewport" aria-hidden="true">
+          {alternative ? staticView : (
+            <SceneBoundary fallback={staticView} onFailure={onFailure}>
+              <div className="scene-live" data-ready={ready ? 'true' : 'false'}>
+                <Suspense fallback={null}>
+                  <SceneCanvas progress={progress} command={command}
+                    active={active} onFailure={onFailure} onReady={onReady} />
+                </Suspense>
+              </div>
+            </SceneBoundary>
+          )}
+        </div>
+        <div className="scene-bottomline">
+          {!alternative && ready ? <>
+            <button className="scene-control" aria-label={t('scene.previous')} title={t('scene.previous')}
+              onClick={() => { command.current = { type: 'turn', angle: -Math.PI / 2 + (command.current?.type === 'turn' ? command.current.angle : 0) } }}>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" /></svg>
+            </button>
+            <button className="scene-control scene-reset" aria-label={t('scene.reset')} title={t('scene.reset')}
+              onClick={() => { command.current = { type: 'reset' } }}>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10a8 8 0 1 1 1 8M4 4v6h6" /></svg>
+            </button>
+            <button className="scene-control" aria-label={t('scene.next')} title={t('scene.next')}
+              onClick={() => { command.current = { type: 'turn', angle: Math.PI / 2 + (command.current?.type === 'turn' ? command.current.angle : 0) } }}>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </button>
+          </> : null}
+          <span className="scene-state" data-active-stage={activeStage}>{!alternative && !ready ? t('scene.loading') : t('scene.hint')}</span>
+        </div>
+        {alternative ? <p className="scene-fallback-note" role="status">
+          {calm ? t('scene.reduced') : t('scene.fallback')}
+          {failed || timedOut ? <button className="scene-retry" onClick={() => location.reload()}>{t('scene.retry')}</button> : null}
+        </p> : null}
       </div>
-      <div className="scene-bottomline">
-        {!alternative && ready ? <>
-          <button className="scene-control" aria-label={t('scene.previous')} title={t('scene.previous')}
-            onClick={() => { command.current = { type: 'turn', angle: -Math.PI / 2 + (command.current?.type === 'turn' ? command.current.angle : 0) } }}>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" /></svg>
-          </button>
-          <button className="scene-control scene-reset" aria-label={t('scene.reset')} title={t('scene.reset')}
-            onClick={() => { command.current = { type: 'reset' } }}>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10a8 8 0 1 1 1 8M4 4v6h6" /></svg>
-          </button>
-          <button className="scene-control" aria-label={t('scene.next')} title={t('scene.next')}
-            onClick={() => { command.current = { type: 'turn', angle: Math.PI / 2 + (command.current?.type === 'turn' ? command.current.angle : 0) } }}>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
-          </button>
-        </> : null}
-        <span className="scene-state" data-active-stage={activeStage}>{!alternative && !ready ? t('scene.loading') : t('scene.hint')}</span>
-      </div>
-      {alternative ? <p className="scene-fallback-note">{calm ? t('scene.reduced') : t('scene.fallback')}</p> : null}
     </aside>
   )
 }

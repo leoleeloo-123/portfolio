@@ -48,9 +48,10 @@ export const resources = {
         "word2": "DATA",
         "word3": "SYSTEMS",
         "loading": "Preparing the visualization",
-        "fallback": "Interactive 3D is unavailable. A still portrait is shown.",
-        "reduced": "Reduced motion is enabled. A still portrait is shown.",
-        "label": "Leo Li’s portrait in an interactive glass cube"
+        "retry": "Reload 3D",
+        "fallback": "Interactive 3D is unavailable. A still prism is shown.",
+        "reduced": "Reduced motion is enabled. A still prism is shown.",
+        "label": "Interactive glass prism with business, data and systems typography"
       },
       "about": {
         "eyebrow": "Behind the systems",
@@ -117,9 +118,10 @@ export const resources = {
         "word2": "数据",
         "word3": "系统",
         "loading": "正在准备可视化",
-        "fallback": "交互式 3D 暂不可用，当前展示静态人像。",
-        "reduced": "已启用减少动态效果，当前展示静态人像。",
-        "label": "李存弘宇的人像玻璃方块交互"
+        "retry": "重新加载 3D",
+        "fallback": "交互式 3D 暂不可用，当前展示静态棱镜。",
+        "reduced": "已启用减少动态效果，当前展示静态棱镜。",
+        "label": "折射业务、数据与系统文字的玻璃棱镜交互"
       },
       "about": {
         "eyebrow": "系统背后的人",

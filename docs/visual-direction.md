@@ -1,57 +1,45 @@
-# Visual direction — Crystal portrait and editorial index
+# Visual direction — Person, prism, information
 
-Current revision: 2026-10-04. The owner asked to restore the supplied cube's optical/interaction signature and Maxime's compact animated list before changing content. This supersedes the gentler portrait/parallax version. The first milestone remains a local visual checkpoint before detailed case studies.
+Current refinement: 2026-10-04. The owner requested a blue/indigo/violet hero with the portrait outside the cube, central refractive typography and a minimal supporting data-flow field. Detailed project content remains deferred.
 
-## Visual principles
+## Principles and composition
 
-One distinctive object anchors a quiet, single-column page. Technology should be tangible in the crystal and character transitions, while typography, side space and straightforward scrolling keep the page professional. The current revision gives those two signature effects more presence; it does not expand the number of sections.
+The person establishes identity; the prism makes structure and transformation tangible; the right field suggests organized information. The center remains the strongest contrast and largest gesture. The two supporting layers share cool color, dots and gradual blending, with neither competing through text or bright focal spheres.
 
-A centered fixed dock, cube, name and short introduction lead into a narrow project index. Desktop and phone share the same reading order. The design system continues to use local Manrope, independent Chinese type sizing, graphite surfaces and a restrained cool accent. The crystal alone can produce brighter white highlights and blue/yellow optical fringes.
+Desktop uses a broad three-part composition above the centered name/introduction. Below 760px the prism/type keeps its own full-width stage, with a smaller portrait/flow pair beneath. The page then continues into the existing narrow editorial index. Ordinary browser scrolling is preserved.
 
-## Reference rationale
+## References
 
-[Maxime Heckel's homepage](https://blog.maximeheckel.com/) informs the narrow reading column, floating navigation, generous side space and compact chronological index. Its [list implementation](https://github.com/MaximeHeckel/blog.maximeheckel.com/blob/main/core/features/ArticlesSection/ArticleSection.tsx) and [character component](https://github.com/MaximeHeckel/blog.maximeheckel.com/blob/main/core/components/ScrambledText.tsx) confirm a character-scramble reveal and hover dimming. These are now implemented as our own small bilingual component rather than substituted with upward fading. Reference branding, articles and particle ring are not imported.
-
-The supplied Design World prompt defines the glass optical recipe and manipulation: six spectral bands, front/back refraction, luminous rounded edges, corner-first composition, drag/inertia, slow idle rotation and quarter-turn buttons. Its large background typography is part of WebGL so it can visibly refract. We preserve these mechanisms in the React/Vite app, adapting the background words and portrait to Leo's page rather than importing the prompt's entire full-screen navigation/slider layout.
+Maxime Heckel's homepage informs the fixed compact dock, whitespace, narrow project index, character-scramble titles and hover dimming. The owner-supplied cube prompt informs six-band optics, rounded geometry, drag/inertia/idle rotation and quarter-turn controls. The latest supplied portrait and composition prompt establish this new atmosphere and separation of person/object. Reference branding, article content, images and particle ring are not imported.
 
 ## Design system
 
-- Type: locally bundled Manrope variable, system Simplified Chinese fallbacks. Body 400; index titles 450; labels 400–500; the refracted background is deliberately bold at 800. Main name and essential copy remain ordinary DOM text.
-- Palette: graphite #101114, surface #181a1f, foreground #f1f2f4, muted #a4a8b2, fine border #30333a and cool accent #b4c7ec. Strong white and spectral color belong primarily to the glass.
-- Spacing: 4px base rhythm, responsive gutters, 720px reading column, opening bounded to 1100px and scene to 820px. Index rows are approximately 56–58px tall when closed. Mobile retains a single line per tested title.
-- Surface: one translucent navigation dock, flat text content, few hairline separators. The index uses a small year column, title, short kind label and disclosure arrow; it avoids card backgrounds and connecting timeline rules.
-- Conventions: stable project IDs, semantic headings, native details/summary, real navigation/locale links, minimum 44px controls and visible focus. No invented dates, contact links or outcomes.
+- Typography: local Manrope variable with system Chinese fallbacks. DOM text retains semantic headings and independent Chinese rhythm; WebGL words are bold at 800, supported by stable DOM equivalents.
+- Color: graphite #101114 continues below the hero; hero top #192749 and middle #151d31 combine restrained blue and violet radial light. Hero tokens live beside existing type, spacing and surface tokens in src/styles/tokens.css.
+- Spacing: 4px foundation, responsive gutters, 720px reading column and hero scene bounded to 1360px. The center occupies half the broad scene; portrait and flow support either side.
+- Materials: fine borders, one translucent dock, flat content and a rounded refractive prism. Screened portrait texture is strongest on the silhouette, with a clean face region and lower fade.
+- Components: stable project IDs, native details/summary, minimum 44px controls, visible focus, real locale links, no fabricated dates or contact information.
 
-## Crystal and portrait
+## Portrait, optics and flow
 
-A locally generated rounded cube has a 2.65 edge and 0.30 bevel radius. The initial Euler pose is [-0.42, 0.62, 0.18], matching the prompt's stronger multi-face angle. Two related scroll poses change angle, scale and portrait depth reversibly within the opening.
+The owner-supplied 1122 × 1402 transparent PNG is served unchanged in two compositing image layers. A cool SVG filter and CSS masks preserve face structure while adding a restrained dot-screen silhouette. Both arms remain recognizable. No photographic content is sampled by the glass.
 
-The owner's transparent image remains a camera-facing flat photographic plane inside the rotating shell. A soft procedural blue atmosphere complements large localized BUSINESS / DATA / SYSTEMS or 业务 / 数据 / 系统 words behind the object. Clear typographic contours provide optical detail that a blurred background alone could not show.
+The local rounded cube keeps a 2.65 edge and 0.30 bevel. Six spectral bands use front/back power 0.24/0.18 and chromatic intensity 0.35, reducing visual noise against the richer atmosphere. The former projected face mask is removed. Localized business/data/systems words remain inside the render pipeline so their contours genuinely refract.
 
-The two-target screen-space material now uses six spectral bands, refraction power 0.30/0.22, chromatic 0.5, saturation 1.08 and white Fresnel/specular light. Face protection is a small projected ellipse that reduces displacement and highlights around the face. The previous global clear window is removed so the other surfaces retain stronger distortion. The material is an approximation rather than physical ray tracing.
+An opaque cool gradient fills the offscreen optical capture. The final canvas is transparent around the object/type and blends with the full-width CSS atmosphere. This is a composed screen-space approximation, not physical ray tracing. Two render targets remain capped at 2048/1024 and samples at 16/8 with DPR 1–2.
 
-Desktop/narrow canvases use 16/8 samples and target edges bounded to 2048/1024, with DPR 1–2. Intermediate render color remains linear, output sRGB, and non-float buffers remain a fallback. Texture creation/disposal and language-change subscriptions are owned at the imperative scene boundary, so translated words update without resetting the object.
+The right deterministic point field converges and branches through five fine paths. Three short traveling segments suggest direction without introducing UI widgets, labels or an orb.
 
-## Animation philosophy
+## Motion
 
-Motion should reveal the object's volume and make short text feel as if it is resolving into information. Mouse drag uses world-space quaternion rotation; release continues with damped angular velocity. After 0.6 seconds the prompt's slow idle rotation blends back in. Buttons smoothly turn ±90° or return to the current scroll pose. Small pointer parallax remains secondary to manipulation.
+Drag rotates the prism, release adds inertia and slow idle rotation resumes. Buttons turn ±90° or reset to the current authored pose. Scroll reversibly blends three related poses in ordinary flow; small pointer parallax remains secondary.
 
-Ordinary browser scrolling drives three related poses while the hero leaves normal flow. There is no scroll interception or long empty animation runway. The visible scene renders for its intentional idle rotation; visibility guards pause it offscreen or while the document is hidden. Physical-device performance remains unmeasured.
+The hero visibility guard pauses WebGL and flow animation offscreen/when hidden. Reduced motion presents a still prism, stationary flow and complete index text. Renderer failure preserves the same DOM portrait and readable content. Normal loading reveals the central scene only after localized type and its complete first render are ready; it never substitutes a portrait inside the cube. A 30-second visible loading budget switches to the static prism and offers a reload action if initialization stalls.
 
-Index titles and short labels use a moving ten-character scramble window at 30ms per character, with a small row stagger. Completed characters stay fixed. Each original glyph reserves its layout slot, and screen readers receive only the stable original text. Short prototype titles naturally resolve faster than long article headlines. Hover/focus dims surrounding rows to 50%; native disclosures reveal existing brief summaries.
-
-On phones, horizontal manipulation and button controls coexist with pan-y vertical scrolling. Mouse wheel scrolling over the canvas was tested; real touch behavior still needs device review. Reduced motion shows the static portrait and complete list text immediately. Renderer failure alternatives preserve the portrait, background words and accessible content. Normal loading reserves the scene area without a static portrait; the complete first 3D frame fades in over 180ms once ready.
-
-## Content and future growth
-
-Tax Engine, Deloitte and Navi Material CRM remain the three provisional entries. All year fields remain null and one shared em dash occupies the year column with an accessible pending label. Verified years can group adjacent rows later. The current order is not a confirmed chronology.
-
-Typed content records, translated strings, index components and the scene remain separate. Future Deloitte workflows, Tax Engine demos, CRM and Fitness OS can grow from their stable IDs after visual approval. The original source photograph and image-processing record remain unchanged.
+Index animation is unchanged: a ten-character resolving window at 30ms per character, brief row staggering, stable glyph slots and original screen-reader text. Hover/focus dims surrounding rows; native disclosures expose provisional summaries.
 
 ## Intentionally avoided
 
-Adding more sections before the signature effects are reviewed; replacing scramble with generic fading; weakening the entire material to protect the face; decorative motion unrelated to interaction; importing reference branding or content; fabricated chronology; fake contact/demo links; private records or project access; external model/font/CDN dependencies; backend, deployment or public previews. Repository synchronization was separately authorized on 2026-10-04.
+Portrait containment in glass, facial deformation, saturated neon, full-screen dashboard decoration, large glowing hubs, extra workflow labels, ornamental floating animations, generic title fades, invented chronology, remote assets/APIs and detailed demos.
 
-## Review checkpoint
-
-The owner should review crystal identity, drag/idle tempo, face clarity, compact index rhythm and deliberate phone composition. Current verification and limitations are in [reference-alignment-review.md](reference-alignment-review.md); evidence is under evidence/reference-alignment/. Previous portrait, abstract-glass and nine-module captures are retained only in the local ignored archive. The owner has approved the current visual base; future design refinements remain possible. Detailed case studies continue to wait for visual approval.
+Current review and limits: [hero-composition-review.md](hero-composition-review.md). The owner can next tune the brightness balance, portrait screening and mobile supporting scale.

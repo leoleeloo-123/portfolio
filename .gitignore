@@ -2,6 +2,7 @@ node_modules/
 /archive/
 dist/
 .cache/
+.vercel/
 *.tsbuildinfo
 .env
 .env.*

@@ -1,0 +1,256 @@
+{
+  "checks": [
+    {
+      "language": "zh",
+      "requestedWidth": 320,
+      "canvas": 1,
+      "centerContainsPortrait": false,
+      "clientWidth": 305,
+      "outOfBounds": [],
+      "overflow": false,
+      "portraitLoaded": true,
+      "ready": "true",
+      "smallControls": [],
+      "width": 320
+    },
+    {
+      "language": "zh",
+      "requestedWidth": 360,
+      "canvas": 1,
+      "centerContainsPortrait": false,
+      "clientWidth": 345,
+      "outOfBounds": [],
+      "overflow": false,
+      "portraitLoaded": true,
+      "ready": "true",
+      "smallControls": [],
+      "width": 360
+    },
+    {
+      "language": "zh",
+      "requestedWidth": 390,
+      "canvas": 1,
+      "centerContainsPortrait": false,
+      "clientWidth": 375,
+      "outOfBounds": [],
+      "overflow": false,
+      "portraitLoaded": true,
+      "ready": "true",
+      "smallControls": [],
+      "width": 390
+    },
+    {
+      "language": "zh",
+      "requestedWidth": 768,
+      "canvas": 1,
+      "centerContainsPortrait": false,
+      "clientWidth": 753,
+      "outOfBounds": [],
+      "overflow": false,
+      "portraitLoaded": true,
+      "ready": "true",
+      "smallControls": [],
+      "width": 768
+    },
+    {
+      "language": "zh",
+      "requestedWidth": 1024,
+      "canvas": 1,
+      "centerContainsPortrait": false,
+      "clientWidth": 1009,
+      "outOfBounds": [],
+      "overflow": false,
+      "portraitLoaded": true,
+      "ready": "true",
+      "smallControls": [],
+      "width": 1024
+    },
+    {
+      "language": "zh",
+      "requestedWidth": 1440,
+      "canvas": 1,
+      "centerContainsPortrait": false,
+      "clientWidth": 1425,
+      "outOfBounds": [],
+      "overflow": false,
+      "portraitLoaded": true,
+      "ready": "true",
+      "smallControls": [],
+      "width": 1440
+    },
+    {
+      "language": "zh",
+      "requestedWidth": 1920,
+      "canvas": 1,
+      "centerContainsPortrait": false,
+      "clientWidth": 1905,
+      "outOfBounds": [],
+      "overflow": false,
+      "portraitLoaded": true,
+      "ready": "true",
+      "smallControls": [],
+      "width": 1920
+    },
+    {
+      "language": "en",
+      "requestedWidth": 320,
+      "canvas": 1,
+      "centerContainsPortrait": false,
+      "clientWidth": 305,
+      "outOfBounds": [],
+      "overflow": false,
+      "portraitLoaded": true,
+      "ready": "true",
+      "smallControls": [],
+      "width": 320
+    },
+    {
+      "language": "en",
+      "requestedWidth": 360,
+      "canvas": 1,
+      "centerContainsPortrait": false,
+      "clientWidth": 345,
+      "outOfBounds": [],
+      "overflow": false,
+      "portraitLoaded": true,
+      "ready": "true",
+      "smallControls": [],
+      "width": 360
+    },
+    {
+      "language": "en",
+      "requestedWidth": 390,
+      "canvas": 1,
+      "centerContainsPortrait": false,
+      "clientWidth": 375,
+      "outOfBounds": [],
+      "overflow": false,
+      "portraitLoaded": true,
+      "ready": "true",
+      "smallControls": [],
+      "width": 390
+    },
+    {
+      "language": "en",
+      "requestedWidth": 768,
+      "canvas": 1,
+      "centerContainsPortrait": false,
+      "clientWidth": 753,
+      "outOfBounds": [],
+      "overflow": false,
+      "portraitLoaded": true,
+      "ready": "true",
+      "smallControls": [],
+      "width": 768
+    },
+    {
+      "language": "en",
+      "requestedWidth": 1024,
+      "canvas": 1,
+      "centerContainsPortrait": false,
+      "clientWidth": 1009,
+      "outOfBounds": [],
+      "overflow": false,
+      "portraitLoaded": true,
+      "ready": "true",
+      "smallControls": [],
+      "width": 1024
+    },
+    {
+      "language": "en",
+      "requestedWidth": 1440,
+      "canvas": 1,
+      "centerContainsPortrait": false,
+      "clientWidth": 1425,
+      "outOfBounds": [],
+      "overflow": false,
+      "portraitLoaded": true,
+      "ready": "true",
+      "smallControls": [],
+      "width": 1440
+    },
+    {
+      "language": "en",
+      "requestedWidth": 1920,
+      "canvas": 1,
+      "centerContainsPortrait": false,
+      "clientWidth": 1905,
+      "outOfBounds": [],
+      "overflow": false,
+      "portraitLoaded": true,
+      "ready": "true",
+      "smallControls": [],
+      "width": 1920
+    },
+    {
+      "check": "native-drag-release",
+      "dragging": false,
+      "ready": "true"
+    },
+    {
+      "check": "keyboard-turn",
+      "focusVisible": true,
+      "focused": "Rotate cube right"
+    },
+    {
+      "active": "false",
+      "check": "mobile-wheel-over-canvas",
+      "flowState": "paused",
+      "phase": "2",
+      "scrollY": 772
+    },
+    {
+      "check": "native-disclosure",
+      "open": true
+    },
+    {
+      "canvas": 1,
+      "check": "locale-before",
+      "language": "zh-Hans",
+      "open": true
+    },
+    {
+      "canvas": 1,
+      "check": "locale-after",
+      "language": "en",
+      "open": true
+    },
+    {
+      "active": "true",
+      "check": "reverse-scroll",
+      "phase": "0",
+      "scrollY": 0
+    },
+    {
+      "canvas": 0,
+      "check": "static-alternative",
+      "overflow": false,
+      "portraitInCenter": false,
+      "sidePortraitLoaded": true,
+      "staticPrism": true
+    },
+    {
+      "canvas": 0,
+      "check": "reduced-alternative",
+      "flowAnimation": "none",
+      "portraitInCenter": false,
+      "scrollBehavior": "auto",
+      "staticPrism": true
+    },
+    {
+      "check": "normal-refresh",
+      "liveOpacity": "0",
+      "ready": "false",
+      "staticCentralPortrait": false,
+      "staticCentralPrism": false
+    }
+  ],
+  "logs": [
+    {
+      "level": "warn",
+      "message": "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+      "timestamp": "2026-10-04T11:17:23.211Z",
+      "url": "http://127.0.0.1:4173/assets/SceneCanvas-iAKqkjmv.js"
+    }
+  ]
+}
