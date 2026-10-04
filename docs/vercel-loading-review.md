@@ -10,7 +10,7 @@ The owner deployed `leo-li.vercel.app` and authorized repair. Project `prj_U85Uf
 
 ## Changes
 
-`vercel.json` rewrites only the two locale namespaces to the app shell; missing JS/images retain genuine 404s. `trailingSlash: true` matches the app's canonical `/en/` and `/zh/` links. Initial namespace rewrites alone worked for `/en` and `/zh` but left their slash variants at 404 in production, so the explicit slash policy was added. No framework, cloud project, secrets or protection settings are changed. The previously requested atmospheric hero and new portrait are included in the repository sync.
+`vercel.json` rewrites only the two locale namespaces to the app shell; missing JS/images retain genuine 404s. `trailingSlash: true` matches the app's canonical `/en/` and `/zh/` links. The deployed `/en/:path*` pattern matched `/en` but did not match an empty trailing segment `/en/`, even with the explicit slash policy. `/en/(.*)` and its Chinese counterpart explicitly allow that empty segment. No framework, cloud project, secrets or protection settings are changed. The previously requested atmospheric hero and new portrait are included in the repository sync.
 
 Scene initialization gets a cumulative 30-second visible loading budget. Offscreen/hidden time pauses it. A stall replaces the hidden canvas with the static prism and a localized manual reload action. This preserves the first-frame reveal and avoids resurfacing the old central portrait.
 
