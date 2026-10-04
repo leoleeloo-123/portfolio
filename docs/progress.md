@@ -10,6 +10,6 @@ Build and lint passed. Responsive, real WebGL, keyboard focus, native drag/scrol
 
 ## Repository and hosting history
 
-The owner authorized GitHub synchronization and repair of their existing Vercel project leo-li. Prior production routing/loading revision be66308 passed HTTP and browser checks; evidence-only commit 76f1fa0 also deployed READY. The current design is ready for synchronization after this checkpoint. No additional cloud projects or backend were created.
+The owner authorized GitHub synchronization and repair of their existing Vercel project leo-li. Prior production routing/loading revision be66308 passed HTTP and browser checks; evidence-only commit 76f1fa0 also deployed READY. The current design commit 0e23b38 deployed READY as dpl_5a2iRXiNTykAU8zQJ5QPnpwMro8A. Both locale URLs and the current JS/CSS/scene/portrait assets returned 200 with correct MIME types; missing JS remained 404. Live English desktop and Chinese 390px WebGL scenes reached ready with the new copy, one dotted photo, no central buttons or horizontal overflow, and no application console errors. See evidence/metro-hero/production-* for screenshots and HTTP results. No additional cloud projects or backend were created.
 
 The earlier crystal/index base is preserved at 51b748f. Drafts, unused source and original assets remain archived and ignored. Previous active documents are copied under archive/hero-before-metro/docs/. README remains the run/edit/documentation index; older screenshot folders describe their historical revisions.

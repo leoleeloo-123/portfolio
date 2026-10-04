@@ -1,0 +1,78 @@
+{
+  "checkedAt": "2026-10-04T13:46:57.975Z",
+  "base": "https://leo-li.vercel.app",
+  "results": [
+    {
+      "path": "/en/",
+      "status": 200,
+      "url": "https://leo-li.vercel.app/en/",
+      "type": "text/html; charset=utf-8",
+      "bytes": 595,
+      "pass": true
+    },
+    {
+      "path": "/zh/",
+      "status": 200,
+      "url": "https://leo-li.vercel.app/zh/",
+      "type": "text/html; charset=utf-8",
+      "bytes": 595,
+      "pass": true
+    },
+    {
+      "path": "/en",
+      "status": 200,
+      "url": "https://leo-li.vercel.app/en/",
+      "type": "text/html; charset=utf-8",
+      "bytes": 595,
+      "pass": true
+    },
+    {
+      "path": "/zh",
+      "status": 200,
+      "url": "https://leo-li.vercel.app/zh/",
+      "type": "text/html; charset=utf-8",
+      "bytes": 595,
+      "pass": true
+    },
+    {
+      "path": "/assets/index-C3MJn3jO.css",
+      "status": 200,
+      "url": "https://leo-li.vercel.app/assets/index-C3MJn3jO.css",
+      "type": "text/css; charset=utf-8",
+      "bytes": 26979,
+      "pass": true
+    },
+    {
+      "path": "/assets/index-extcoW4B.js",
+      "status": 200,
+      "url": "https://leo-li.vercel.app/assets/index-extcoW4B.js",
+      "type": "application/javascript; charset=utf-8",
+      "bytes": 296297,
+      "pass": true
+    },
+    {
+      "path": "/assets/SceneCanvas-BDNxsyrH.js",
+      "status": 200,
+      "url": "https://leo-li.vercel.app/assets/SceneCanvas-BDNxsyrH.js",
+      "type": "application/javascript; charset=utf-8",
+      "bytes": 925160,
+      "pass": true
+    },
+    {
+      "path": "/images/leo-portrait-professional.png",
+      "status": 200,
+      "url": "https://leo-li.vercel.app/images/leo-portrait-professional.png",
+      "type": "image/png",
+      "bytes": 1754183,
+      "pass": true
+    },
+    {
+      "path": "/assets/missing-check.js",
+      "status": 404,
+      "url": "https://leo-li.vercel.app/assets/missing-check.js",
+      "type": "text/plain; charset=utf-8",
+      "bytes": 79,
+      "pass": true
+    }
+  ]
+}

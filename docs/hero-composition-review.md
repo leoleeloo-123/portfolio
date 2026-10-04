@@ -24,4 +24,6 @@ Visible rotation/reset buttons and the idle drag hint are removed. Direct drag/i
 
 Evidence: evidence/metro-hero/ contains desktop/mobile screenshots in both languages, a mobile static fallback, and responsive DOM observations. Tests use the Windows in-app browser; real phones/GPU/battery behavior remains unmeasured. Screenshots capture different authored interaction poses because rotation continues.
 
+Production application revision 0e23b38 deployed READY to leo-li.vercel.app. Live desktop English and mobile Chinese checks confirmed the new text, one dotted photo, real WebGL, straight routes and zero central controls. HTTP checks confirmed the locale pages and current assets load successfully; no application console errors were captured. Production screenshots and HTTP results are also in evidence/metro-hero/.
+
 The previous three-part hero review/documents are retained in Git history and locally under archive/hero-before-metro/docs/. Earlier atmosphere and Vercel repair evidence describes its own revision.
