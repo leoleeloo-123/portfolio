@@ -98,14 +98,16 @@ export function createHeadlineCanvas(lines: readonly string[], aspect = 1.5) {
   const { canvas, context } = canvasWithContext(width, height)
   context.textAlign = 'center'
   context.textBaseline = 'middle'
-  let size = Math.min(height * 0.21, width * 0.25)
-  const font = () => `800 ${size}px "Manrope Variable", "Microsoft YaHei", sans-serif`
-  context.font = font()
-  const widest = Math.max(...lines.map(line => context.measureText(line).width))
-  size *= Math.min(1, width * 0.90 / Math.max(widest, 1))
-  context.font = font()
+  const baseSize = Math.min(height * 0.21, width * 0.25)
   context.fillStyle = '#e9e9e9'
-  lines.forEach((line, index) => context.fillText(line, width / 2, height / 2 + (index - 1) * size * 1.18))
+  lines.forEach((line, index) => {
+    // Fit each line independently: the longer Chinese first line must not
+    // shrink the entire composition. Keep three stable authored baselines.
+    context.font = `800 ${baseSize}px "Manrope Variable", "Microsoft YaHei", sans-serif`
+    const size = baseSize * Math.min(1, width * 0.9 / Math.max(context.measureText(line).width, 1))
+    context.font = `800 ${size}px "Manrope Variable", "Microsoft YaHei", sans-serif`
+    context.fillText(line, width / 2, height / 2 + (index - 1) * baseSize * 1.18)
+  })
   return canvas
 }
 

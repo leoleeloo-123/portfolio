@@ -1,4 +1,4 @@
-/** Local cutout with a clean face and a progressively screened silhouette. */
+/** A single screened cutout: the same coarse dot mask covers face and body. */
 export function HeroPortrait() {
   return (
     <div className="hero-portrait" aria-hidden="true">
@@ -14,8 +14,7 @@ export function HeroPortrait() {
           </filter>
         </defs>
       </svg>
-      <img className="portrait-base" src="/images/leo-portrait-professional.png" alt="" width="1122" height="1402" fetchPriority="high" />
-      <img className="portrait-screen" src="/images/leo-portrait-professional.png" alt="" width="1122" height="1402" />
+      <img className="portrait-screen" src="/images/leo-portrait-professional.png" alt="" width="1122" height="1402" fetchPriority="high" />
     </div>
   )
 }

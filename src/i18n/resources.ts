@@ -40,18 +40,15 @@ export const resources = {
         }
       },
       "scene": {
-        "hint": "Drag to rotate",
-        "previous": "Rotate cube left",
-        "next": "Rotate cube right",
-        "reset": "Reset cube orientation",
-        "word1": "BUSINESS",
-        "word2": "DATA",
-        "word3": "SYSTEMS",
+        "word1": "Business",
+        "word2": "Workflows",
+        "word3": "Systems",
+        "keyboard": "Use the left and right arrow keys to rotate. Press Home to reset.",
         "loading": "Preparing the visualization",
         "retry": "Reload 3D",
         "fallback": "Interactive 3D is unavailable. A still prism is shown.",
         "reduced": "Reduced motion is enabled. A still prism is shown.",
-        "label": "Interactive glass prism with business, data and systems typography"
+        "label": "Interactive glass prism with Business, Workflows and Systems typography"
       },
       "about": {
         "eyebrow": "Behind the systems",
@@ -110,18 +107,15 @@ export const resources = {
         }
       },
       "scene": {
-        "hint": "拖拽旋转",
-        "previous": "向左旋转方块",
-        "next": "向右旋转方块",
-        "reset": "复位方块视角",
-        "word1": "业务",
-        "word2": "数据",
-        "word3": "系统",
+        "word1": "业务 x 财务 x 税务",
+        "word2": "自动化工作流",
+        "word3": "数字化系统",
+        "keyboard": "使用左右方向键旋转，按 Home 键复位。",
         "loading": "正在准备可视化",
         "retry": "重新加载 3D",
         "fallback": "交互式 3D 暂不可用，当前展示静态棱镜。",
         "reduced": "已启用减少动态效果，当前展示静态棱镜。",
-        "label": "折射业务、数据与系统文字的玻璃棱镜交互"
+        "label": "折射业务、财务、税务、自动化工作流与数字化系统文字的玻璃棱镜交互"
       },
       "about": {
         "eyebrow": "系统背后的人",

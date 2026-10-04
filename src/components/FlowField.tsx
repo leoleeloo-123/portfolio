@@ -1,43 +1,44 @@
-const traces = [
-  'M12 60 C110 60 90 190 170 190 S245 110 328 110',
-  'M12 120 C95 120 115 211 174 211 S257 186 328 186',
-  'M12 188 C92 188 120 232 174 232 S244 260 328 260',
-  'M12 272 C90 272 105 254 174 254 S248 326 328 326',
-  'M12 348 C99 348 91 275 174 275 S257 378 328 378',
+const routes = [
+  'M8 86 H108 L180 158 H304 L374 88 H430',
+  'M8 214 H142 L214 286 H352 L430 364',
+  'M8 398 H92 L180 310 V158 L250 88 V18',
+  'M68 458 V366 L142 292 V214 L228 128 H370 L430 188',
 ]
+const stations = [
+  [48, 86], [108, 86], [238, 158], [304, 158], [398, 88],
+  [48, 214], [142, 214], [214, 286], [300, 286], [390, 324],
+  [42, 398], [92, 398], [180, 310], [180, 236], [250, 56],
+  [68, 428], [106, 328], [142, 292], [292, 128], [370, 128],
+]
+const interchanges = [[180, 158], [142, 214], [214, 286]]
 
-// A deterministic field narrows into an organized channel, then branches again.
-const points = Array.from({ length: 22 * 18 }, (_, index) => {
-  const column = index % 22
-  const row = Math.floor(index / 22)
-  const x = 12 + column * 14.4
-  const width = 44 + 116 * Math.pow(Math.abs((x - 174) / 174), 1.35)
-  const y = 232 + (row / 17 - .5) * width * 2
-  return { x, y, opacity: .12 + .32 * (1 - Math.abs(row / 17 - .5) * 1.5), r: column % 5 === 0 ? 1.25 : .85 }
-})
-
-/** Supporting geometry, without labels, dashboard widgets or a glowing hub. */
+/** Straight routes, diagonal turns and circular stations suggest connected workflows. */
 export function FlowField() {
   return (
     <div className="hero-flow" aria-hidden="true">
-      <svg viewBox="0 0 340 440" fill="none">
+      <svg viewBox="0 0 440 480" fill="none">
         <defs>
-          <linearGradient id="flow-ink" x1="12" y1="232" x2="328" y2="232" gradientUnits="userSpaceOnUse">
-            <stop stopColor="#7e9ee8" stopOpacity=".1" />
-            <stop offset=".5" stopColor="#b3c4ff" stopOpacity=".7" />
-            <stop offset="1" stopColor="#aca0e2" stopOpacity=".12" />
+          <linearGradient id="flow-ink" x1="0" y1="0" x2="440" y2="480" gradientUnits="userSpaceOnUse">
+            <stop stopColor="#a9c6fa" stopOpacity=".75" />
+            <stop offset="1" stopColor="#a99cda" stopOpacity=".4" />
           </linearGradient>
         </defs>
-        <g fill="#aabfff">
-          {points.map((point, index) => <circle key={index} cx={point.x} cy={point.y} r={point.r} opacity={point.opacity} />)}
+        <g stroke="url(#flow-ink)" strokeWidth="1.6" strokeLinejoin="miter">
+          {routes.map(path => <path key={path} d={path} />)}
         </g>
-        <g stroke="url(#flow-ink)" strokeWidth=".8">
-          {traces.map(path => <path key={path} d={path} />)}
-        </g>
-        <g stroke="#c0ceff" strokeWidth="1.4" strokeLinecap="round">
-          {[traces[0], traces[2], traces[4]].map((path, index) => (
+        <g stroke="#d0dfff" strokeWidth="2" strokeLinecap="round">
+          {[routes[0], routes[1], routes[3]].map((path, index) => (
             <path key={path} d={path} pathLength="100" className={`flow-signal flow-signal-${index}`} />
           ))}
+        </g>
+        <g fill="#273251" stroke="#abc2ef" strokeWidth="1.6">
+          {stations.map(([x, y]) => <circle key={`${x}-${y}`} cx={x} cy={y} r="5" />)}
+        </g>
+        <g fill="#273251" stroke="#c3d2f4" strokeWidth="2">
+          {interchanges.map(([x, y]) => <g key={`${x}-${y}`}>
+            <circle cx={x} cy={y} r="9" />
+            <circle cx={x} cy={y} r="3" fill="#b0c5ef" stroke="none" />
+          </g>)}
         </g>
       </svg>
     </div>

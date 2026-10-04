@@ -65,15 +65,30 @@ export function SceneStage({ progress, activeStage }: { progress: MotionValue<nu
 
   const staticView = <StaticSystem />
   return (
-    <aside ref={stageRef} className="scene-stage" data-scene-active={active ? 'true' : 'false'} data-scene-mode={mode} data-scene-ready={alternative || ready ? 'true' : 'false'} aria-label={t('scene.label')}>
+    <aside ref={stageRef} className="scene-stage" data-active-stage={activeStage} data-scene-active={active ? 'true' : 'false'} data-scene-mode={mode} data-scene-ready={alternative || ready ? 'true' : 'false'} aria-label={t('scene.label')}>
       <HeroPortrait />
       <FlowField />
       <p className="sr-only">{t('scene.word1')} / {t('scene.word2')} / {t('scene.word3')}</p>
+      {!alternative && ready ? <p id="scene-keyboard" className="sr-only">{t('scene.keyboard')}</p> : null}
       <div className="scene-center">
-        <div className="scene-viewport" aria-hidden="true">
+        <div className="scene-viewport" role="group" aria-label={t('scene.label')}
+          tabIndex={!alternative && ready ? 0 : undefined}
+          aria-describedby={!alternative && ready ? 'scene-keyboard' : undefined}
+          aria-keyshortcuts={!alternative && ready ? 'ArrowLeft ArrowRight Home' : undefined}
+          onKeyDown={event => {
+            if (alternative || !ready) return
+            if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+              event.preventDefault()
+              const angle = event.key === 'ArrowLeft' ? -Math.PI / 2 : Math.PI / 2
+              command.current = { type: 'turn', angle: angle + (command.current?.type === 'turn' ? command.current.angle : 0) }
+            } else if (event.key === 'Home') {
+              event.preventDefault()
+              command.current = { type: 'reset' }
+            }
+          }}>
           {alternative ? staticView : (
             <SceneBoundary fallback={staticView} onFailure={onFailure}>
-              <div className="scene-live" data-ready={ready ? 'true' : 'false'}>
+              <div className="scene-live" aria-hidden="true" data-ready={ready ? 'true' : 'false'}>
                 <Suspense fallback={null}>
                   <SceneCanvas progress={progress} command={command}
                     active={active} onFailure={onFailure} onReady={onReady} />
@@ -82,23 +97,7 @@ export function SceneStage({ progress, activeStage }: { progress: MotionValue<nu
             </SceneBoundary>
           )}
         </div>
-        <div className="scene-bottomline">
-          {!alternative && ready ? <>
-            <button className="scene-control" aria-label={t('scene.previous')} title={t('scene.previous')}
-              onClick={() => { command.current = { type: 'turn', angle: -Math.PI / 2 + (command.current?.type === 'turn' ? command.current.angle : 0) } }}>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" /></svg>
-            </button>
-            <button className="scene-control scene-reset" aria-label={t('scene.reset')} title={t('scene.reset')}
-              onClick={() => { command.current = { type: 'reset' } }}>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10a8 8 0 1 1 1 8M4 4v6h6" /></svg>
-            </button>
-            <button className="scene-control" aria-label={t('scene.next')} title={t('scene.next')}
-              onClick={() => { command.current = { type: 'turn', angle: Math.PI / 2 + (command.current?.type === 'turn' ? command.current.angle : 0) } }}>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
-            </button>
-          </> : null}
-          <span className="scene-state" data-active-stage={activeStage}>{!alternative && !ready ? t('scene.loading') : t('scene.hint')}</span>
-        </div>
+        {!alternative && !ready ? <p className="scene-loading" role="status">{t('scene.loading')}</p> : null}
         {alternative ? <p className="scene-fallback-note" role="status">
           {calm ? t('scene.reduced') : t('scene.fallback')}
           {failed || timedOut ? <button className="scene-retry" onClick={() => location.reload()}>{t('scene.retry')}</button> : null}

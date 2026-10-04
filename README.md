@@ -24,8 +24,8 @@ The production preview normally uses port 4173. `dist/` is generated and ignored
 
 ## Current experience
 
-- A cool portrait sits outside the glass on the left; a minimal point/trace field supports the right. Mobile places these supporting layers beneath the central prism rather than shrinking the desktop layout.
-- Six-band typography/atmosphere refraction, drag with inertia, idle rotation, accessible left/right/reset controls and three reversible scroll poses.
+- A larger cool portrait with coarse dots across face and body sits on the left; straight metro-style routes and circular stations support the right. Mobile keeps both behind the prism with deliberate edge cropping.
+- Six-band typography/atmosphere refraction, drag with inertia, idle rotation and three reversible scroll poses. Visible controls are removed; focus the scene to use left/right arrow keys and Home.
 - Compact project rows with character-scramble reveals, hover/focus dimming and native expandable summaries. Dates stay unset until verified.
 - English and Simplified Chinese routes preserve the reading anchor and scene identity on language switches.
 - Refresh reveals the prism after its localized type texture and complete first frame are ready. The portrait loads independently in the DOM. Reduced motion, unavailable WebGL and 30 seconds of visible loading show a static prism with the same supporting portrait. Failed or timed-out loads offer a reload action; hidden/offscreen time does not consume the loading budget.
