@@ -6,11 +6,11 @@ Narrative: Finance & Accounting → Data → Automation → Tax Technology → A
 
 ## Current visual milestone
 
-The owner confirmed the current hero refinement on 2026-10-04: a larger cool professional portrait with coarse dots across face and body on the left, central bold typography with a refractive glass prism, and straight metro-style workflow routes with circular stations on the right. The portrait stays outside WebGL. A restrained blue/indigo/violet atmosphere fades down into graphite.
+The owner confirmed the current hero refinement on 2026-10-04: a larger cool professional portrait with coarse dots across face and body on the left, central bold typography with a refractive glass prism, and atmospheric dotted processing nodes with orthogonal branch/merge connections on the right. The portrait stays outside WebGL. A stronger blue-left/purple-right upper atmosphere fades down into graphite. Full-bleed viewport and safe-area spacing support iPhone displays.
 
 The center has primary visual weight; both sides support it through matching texture and color. On mobile, the portrait and routes remain behind the prism to the left/right, with deliberate edge cropping. Visible rotation/reset controls are removed; direct drag and keyboard arrows/Home remain. Keep the fixed dock, introduction, three provisional rows, ordinary scrolling and three reversible poses. Detailed content expansion remains deferred.
 
-Owner-specified scene copy: Business / Workflows / Systems; 业务 x 财务 x 税务 / 自动化工作流 / 数字化系统. Each line fits independently without changing its wording.
+Owner-specified scene copy: Business / Workflows / Systems; 业财税 / 工作流 / 数字化. Each line fits independently without changing its wording.
 
 Stack: local React, strict TypeScript, Vite, Tailwind, i18next/react-i18next, Motion and Three.js/React Three Fiber. Separate UI, scene, typed content and translations; one npm lockfile. No backend or live APIs.
 

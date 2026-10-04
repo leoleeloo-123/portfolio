@@ -1,0 +1,422 @@
+[
+  {
+    "buttons": 0,
+    "canvases": 1,
+    "center": {
+      "height": 300,
+      "width": 245.4166717529297,
+      "x": 29.625,
+      "y": 93
+    },
+    "locale": "zh-Hans",
+    "mode": "webgl",
+    "nodes": 5,
+    "overflow": false,
+    "portrait": {
+      "height": 282,
+      "width": 234.48959350585935,
+      "x": -43.97916793823242,
+      "y": 99
+    },
+    "ready": "true",
+    "screen": true,
+    "text": "业财税 / 工作流 / 数字化使用左右方向键旋转，按 Home 键复位。",
+    "width": 320,
+    "workflow": {
+      "height": 276,
+      "width": 250.84375,
+      "x": 111.4375,
+      "y": 105
+    }
+  },
+  {
+    "buttons": 0,
+    "canvases": 1,
+    "center": {
+      "height": 324,
+      "width": 281.41668701171875,
+      "x": 31.625,
+      "y": 93
+    },
+    "locale": "zh-Hans",
+    "mode": "webgl",
+    "nodes": 5,
+    "overflow": false,
+    "portrait": {
+      "height": 304.5520935058594,
+      "width": 268.88543701171875,
+      "x": -52.78125,
+      "y": 100.44792175292967
+    },
+    "ready": "true",
+    "screen": true,
+    "text": "业财税 / 工作流 / 数字化使用左右方向键旋转，按 Home 键复位。",
+    "width": 360,
+    "workflow": {
+      "height": 298.07293701171875,
+      "width": 287.6458435058594,
+      "x": 125.4375,
+      "y": 106.92708587646484
+    }
+  },
+  {
+    "buttons": 0,
+    "canvases": 1,
+    "center": {
+      "height": 351,
+      "width": 308.41668701171875,
+      "x": 33.125,
+      "y": 93
+    },
+    "locale": "zh-Hans",
+    "mode": "webgl",
+    "nodes": 5,
+    "overflow": false,
+    "portrait": {
+      "height": 329.9375,
+      "width": 294.6875,
+      "x": -59.38541793823242,
+      "y": 102.0625
+    },
+    "ready": "true",
+    "screen": true,
+    "text": "业财税 / 工作流 / 数字化使用左右方向键旋转，按 Home 键复位。",
+    "width": 390,
+    "workflow": {
+      "height": 322.91668701171875,
+      "width": 315.25,
+      "x": 135.92709350585938,
+      "y": 109.08333587646484
+    }
+  },
+  {
+    "buttons": 0,
+    "canvases": 1,
+    "center": {
+      "height": 460,
+      "width": 371.8958435058594,
+      "x": 190.3854217529297,
+      "y": 108
+    },
+    "locale": "zh-Hans",
+    "mode": "webgl",
+    "nodes": 5,
+    "overflow": false,
+    "portrait": {
+      "height": 441.59375,
+      "width": 275.4583435058594,
+      "x": -9.3125,
+      "y": 114.40625
+    },
+    "ready": "true",
+    "screen": true,
+    "text": "业财税 / 工作流 / 数字化使用左右方向键旋转，按 Home 键复位。",
+    "width": 768,
+    "workflow": {
+      "height": 432.3958435058594,
+      "width": 261.6875,
+      "x": 500.2916870117187,
+      "y": 121.60417175292967
+    }
+  },
+  {
+    "buttons": 0,
+    "canvases": 1,
+    "center": {
+      "height": 460,
+      "width": 510.125,
+      "x": 249.27084350585935,
+      "y": 108
+    },
+    "locale": "zh-Hans",
+    "mode": "webgl",
+    "nodes": 5,
+    "overflow": false,
+    "portrait": {
+      "height": 441.59375,
+      "width": 377.8645935058594,
+      "x": -24.67708396911621,
+      "y": 114.40625
+    },
+    "ready": "true",
+    "screen": true,
+    "text": "业财税 / 工作流 / 数字化使用左右方向键旋转，按 Home 键复位。",
+    "width": 1024,
+    "workflow": {
+      "height": 432.3958435058594,
+      "width": 358.96875,
+      "x": 674.375,
+      "y": 121.60417175292967
+    }
+  },
+  {
+    "buttons": 0,
+    "canvases": 1,
+    "center": {
+      "height": 540,
+      "width": 680.3333740234375,
+      "x": 372.1666870117187,
+      "y": 108
+    },
+    "locale": "zh-Hans",
+    "mode": "webgl",
+    "nodes": 5,
+    "overflow": false,
+    "portrait": {
+      "height": 518.3958740234375,
+      "width": 517.0521240234375,
+      "x": -8.8125,
+      "y": 117.60417175292967
+    },
+    "ready": "true",
+    "screen": true,
+    "text": "业财税 / 工作流 / 数字化使用左右方向键旋转，按 Home 键复位。",
+    "width": 1440,
+    "workflow": {
+      "height": 507.59375,
+      "width": 476.2291870117187,
+      "x": 957.25,
+      "y": 126.40625
+    }
+  },
+  {
+    "buttons": 0,
+    "canvases": 1,
+    "center": {
+      "height": 540,
+      "width": 720,
+      "x": 592.3333740234375,
+      "y": 108
+    },
+    "locale": "zh-Hans",
+    "mode": "webgl",
+    "nodes": 5,
+    "overflow": false,
+    "portrait": {
+      "height": 518.3958740234375,
+      "width": 547.1979370117188,
+      "x": 189.1354217529297,
+      "y": 117.60417175292967
+    },
+    "ready": "true",
+    "screen": true,
+    "text": "业财税 / 工作流 / 数字化使用左右方向键旋转，按 Home 键复位。",
+    "width": 1920,
+    "workflow": {
+      "height": 507.59375,
+      "width": 504,
+      "x": 1211.53125,
+      "y": 126.40625
+    }
+  },
+  {
+    "buttons": 0,
+    "canvases": 1,
+    "center": {
+      "height": 300,
+      "width": 245.4166717529297,
+      "x": 29.625,
+      "y": 93
+    },
+    "locale": "en",
+    "mode": "webgl",
+    "nodes": 5,
+    "overflow": false,
+    "portrait": {
+      "height": 282,
+      "width": 234.48959350585935,
+      "x": -43.97916793823242,
+      "y": 99
+    },
+    "ready": "true",
+    "screen": true,
+    "text": "Business / Workflows / SystemsUse the left and right arrow keys to rotate. Press Home to reset.",
+    "width": 320,
+    "workflow": {
+      "height": 276,
+      "width": 250.84375,
+      "x": 111.4375,
+      "y": 105
+    }
+  },
+  {
+    "buttons": 0,
+    "canvases": 1,
+    "center": {
+      "height": 324,
+      "width": 281.41668701171875,
+      "x": 31.625,
+      "y": 93
+    },
+    "locale": "en",
+    "mode": "webgl",
+    "nodes": 5,
+    "overflow": false,
+    "portrait": {
+      "height": 304.5520935058594,
+      "width": 268.88543701171875,
+      "x": -52.78125,
+      "y": 100.44792175292967
+    },
+    "ready": "true",
+    "screen": true,
+    "text": "Business / Workflows / SystemsUse the left and right arrow keys to rotate. Press Home to reset.",
+    "width": 360,
+    "workflow": {
+      "height": 298.07293701171875,
+      "width": 287.6458435058594,
+      "x": 125.4375,
+      "y": 106.92708587646484
+    }
+  },
+  {
+    "buttons": 0,
+    "canvases": 1,
+    "center": {
+      "height": 351,
+      "width": 308.41668701171875,
+      "x": 33.125,
+      "y": 93
+    },
+    "locale": "en",
+    "mode": "webgl",
+    "nodes": 5,
+    "overflow": false,
+    "portrait": {
+      "height": 329.9375,
+      "width": 294.6875,
+      "x": -59.38541793823242,
+      "y": 102.0625
+    },
+    "ready": "true",
+    "screen": true,
+    "text": "Business / Workflows / SystemsUse the left and right arrow keys to rotate. Press Home to reset.",
+    "width": 390,
+    "workflow": {
+      "height": 322.91668701171875,
+      "width": 315.25,
+      "x": 135.92709350585938,
+      "y": 109.08333587646484
+    }
+  },
+  {
+    "buttons": 0,
+    "canvases": 1,
+    "center": {
+      "height": 460,
+      "width": 371.8958435058594,
+      "x": 190.3854217529297,
+      "y": 108
+    },
+    "locale": "en",
+    "mode": "webgl",
+    "nodes": 5,
+    "overflow": false,
+    "portrait": {
+      "height": 441.59375,
+      "width": 275.4583435058594,
+      "x": -9.3125,
+      "y": 114.40625
+    },
+    "ready": "true",
+    "screen": true,
+    "text": "Business / Workflows / SystemsUse the left and right arrow keys to rotate. Press Home to reset.",
+    "width": 768,
+    "workflow": {
+      "height": 432.3958435058594,
+      "width": 261.6875,
+      "x": 500.2916870117187,
+      "y": 121.60417175292967
+    }
+  },
+  {
+    "buttons": 0,
+    "canvases": 1,
+    "center": {
+      "height": 460,
+      "width": 510.125,
+      "x": 249.27084350585935,
+      "y": 108
+    },
+    "locale": "en",
+    "mode": "webgl",
+    "nodes": 5,
+    "overflow": false,
+    "portrait": {
+      "height": 441.59375,
+      "width": 377.8645935058594,
+      "x": -24.67708396911621,
+      "y": 114.40625
+    },
+    "ready": "true",
+    "screen": true,
+    "text": "Business / Workflows / SystemsUse the left and right arrow keys to rotate. Press Home to reset.",
+    "width": 1024,
+    "workflow": {
+      "height": 432.3958435058594,
+      "width": 358.96875,
+      "x": 674.375,
+      "y": 121.60417175292967
+    }
+  },
+  {
+    "buttons": 0,
+    "canvases": 1,
+    "center": {
+      "height": 540,
+      "width": 680.3333740234375,
+      "x": 372.1666870117187,
+      "y": 108
+    },
+    "locale": "en",
+    "mode": "webgl",
+    "nodes": 5,
+    "overflow": false,
+    "portrait": {
+      "height": 518.3958740234375,
+      "width": 517.0521240234375,
+      "x": -8.8125,
+      "y": 117.60417175292967
+    },
+    "ready": "true",
+    "screen": true,
+    "text": "Business / Workflows / SystemsUse the left and right arrow keys to rotate. Press Home to reset.",
+    "width": 1440,
+    "workflow": {
+      "height": 507.59375,
+      "width": 476.2291870117187,
+      "x": 957.25,
+      "y": 126.40625
+    }
+  },
+  {
+    "buttons": 0,
+    "canvases": 1,
+    "center": {
+      "height": 540,
+      "width": 720,
+      "x": 592.3333740234375,
+      "y": 108
+    },
+    "locale": "en",
+    "mode": "webgl",
+    "nodes": 5,
+    "overflow": false,
+    "portrait": {
+      "height": 518.3958740234375,
+      "width": 547.1979370117188,
+      "x": 189.1354217529297,
+      "y": 117.60417175292967
+    },
+    "ready": "true",
+    "screen": true,
+    "text": "Business / Workflows / SystemsUse the left and right arrow keys to rotate. Press Home to reset.",
+    "width": 1920,
+    "workflow": {
+      "height": 507.59375,
+      "width": 504,
+      "x": 1211.53125,
+      "y": 126.40625
+    }
+  }
+]

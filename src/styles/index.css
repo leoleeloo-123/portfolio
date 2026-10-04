@@ -3,8 +3,8 @@
 
 @layer base {
   * { box-sizing: border-box; }
-  html { background: var(--color-bg); scroll-behavior: smooth; scroll-padding-top: 110px; }
-  body { margin: 0; color: var(--color-fg); font-family: var(--font-sans); font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+  html { background-color: var(--hero-top); background-image: linear-gradient(105deg, #0752be, #492798); scroll-behavior: smooth; scroll-padding-top: calc(110px + env(safe-area-inset-top, 0px)); }
+  body { margin: 0; background-color: var(--color-bg); color: var(--color-fg); font-family: var(--font-sans); font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
   a { color: inherit; text-decoration: none; }
   button { font: inherit; color: inherit; cursor: pointer; }
   button, a { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
@@ -18,7 +18,7 @@
 .skip-link { position: fixed; top: -80px; left: 20px; z-index: 100; background: var(--color-fg); color: var(--color-bg); padding: 12px 20px; }
 .skip-link:focus { top: 12px; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
-.site-header { position: fixed; top: max(20px, env(safe-area-inset-top)); left: 50%; transform: translateX(-50%); z-index: 20; width: max-content; max-width: calc(100% - 28px); border-radius: 14px; background: rgb(31 33 39 / .78); border: 1px solid rgb(131 145 170 / .2); box-shadow: 0 8px 30px rgb(0 0 0 / .15), inset 0 1px 0 rgb(255 255 255 / .035); backdrop-filter: blur(18px); }
+.site-header { position: fixed; top: calc(20px + env(safe-area-inset-top, 0px)); left: 50%; transform: translateX(-50%); z-index: 20; width: max-content; max-width: calc(100% - 28px); border-radius: 14px; background: rgb(31 33 39 / .78); border: 1px solid rgb(131 145 170 / .2); box-shadow: 0 8px 30px rgb(0 0 0 / .15), inset 0 1px 0 rgb(255 255 255 / .035); backdrop-filter: blur(18px); }
 .header-inner { height: 54px; display: flex; align-items: center; padding: 4px 8px; gap: 5px; }
 .brand { display: grid; place-items: center; width: 46px; height: 44px; margin-right: 4px; border-right: 1px solid rgb(131 145 170 / .17); }
 .brand-mark { display: inline-flex; align-items: center; gap: 3px; transform: skewY(-18deg); font-size: 29px; line-height: 1; font-weight: 350; color: var(--color-accent); padding-right: 7px; }
@@ -29,14 +29,14 @@
 .locale-switch { margin-left: 4px; padding-left: 5px; border-left: 1px solid rgb(131 145 170 / .17); }
 .locale-switch a { min-width: 44px; padding-inline: 8px; font-size: 12px; color: var(--color-faint); }
 .locale-switch a[aria-current] { color: var(--color-fg); background: rgb(255 255 255 / .04); }
-.portrait-intro { margin-inline: auto; padding: 108px 32px 54px; position: relative; isolation: isolate; background: radial-gradient(ellipse at 16% 12%, rgb(var(--hero-blue-glow) / .48), transparent 58%), radial-gradient(ellipse at 78% 8%, rgb(var(--hero-violet-glow) / .30), transparent 52%), linear-gradient(180deg, var(--hero-top) 0%, var(--hero-middle) 50%, var(--color-bg) 100%); }
+.portrait-intro { margin-inline: auto; padding: calc(108px + env(safe-area-inset-top, 0px)) max(32px, env(safe-area-inset-right, 0px)) 54px max(32px, env(safe-area-inset-left, 0px)); position: relative; isolation: isolate; background: linear-gradient(180deg, transparent 0%, rgb(16 17 20 / .3) 32%, rgb(16 17 20 / .87) 73%, var(--color-bg) 100%), radial-gradient(ellipse at 15% 0%, rgb(var(--hero-blue-glow) / .9), transparent 70%), radial-gradient(ellipse at 94% 0%, rgb(var(--hero-violet-glow) / .82), transparent 70%), linear-gradient(105deg, #074cae, #483090); }
 .scene-stage { position: relative; height: clamp(460px, 38vw, 540px); width: min(100%, 1440px); margin-inline: auto; isolation: isolate; overflow: clip; }
 .scene-center { position: absolute; inset: 0 25%; z-index: 2; }
 .hero-portrait { position: absolute; left: -3%; bottom: 12px; width: 38%; height: 96%; opacity: .92; pointer-events: none; mask-image: linear-gradient(#000 62%, rgb(0 0 0 / .8) 80%, transparent 100%); }
 .portrait-filter { position: absolute; }
 .hero-portrait img { position: absolute; width: 100%; height: 100%; object-fit: contain; object-position: center bottom; filter: url(#portrait-cool); }
 .portrait-screen { opacity: 1; mask-image: radial-gradient(circle, #000 1.6px, transparent 1.9px); mask-size: 6px 6px; mask-repeat: repeat; }
-.hero-flow { position: absolute; right: -3%; bottom: 14px; width: 35%; height: 94%; opacity: .62; pointer-events: none; mask-image: linear-gradient(180deg, transparent, #000 12%, #000 84%, transparent); }
+.hero-flow { position: absolute; right: -3%; bottom: 14px; width: 35%; height: 94%; opacity: .78; color: #b7caff; pointer-events: none; mask-image: radial-gradient(ellipse at 48% 48%, #000 24%, rgb(0 0 0 / .75) 55%, transparent 78%); }
 .hero-flow svg { width: 100%; height: 100%; overflow: visible; }
 .flow-signal { stroke-dasharray: 3 97; opacity: .5; animation: flow-travel 9s linear infinite; }
 .flow-signal-1 { animation-delay: -3s; animation-duration: 11s; }
@@ -55,8 +55,7 @@
 .scene-retry { display: block; min-width: 44px; min-height: 44px; margin-inline: auto; padding: 6px 12px; color: var(--color-fg); text-decoration: underline; text-underline-offset: 4px; }
 .static-system { position: relative; width: 100%; height: 100%; display: grid; place-items: center; perspective: 1000px; }
 .static-headline { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 20px; font-size: 16cqi; font-weight: 800; line-height: 1.12; color: #e9e9e9; }
-:lang(zh-Hans) .static-headline { font-size: 14cqi; }
-:lang(zh-Hans) .static-headline span:first-child { font-size: 9.5cqi; }
+:lang(zh-Hans) .static-headline { font-size: 23cqi; }
 .static-glass { position: relative; width: min(65%, 330px); aspect-ratio: 1; border-radius: 32px; border: 1px solid rgb(241 245 255 / .75); transform: rotateY(-24deg) rotateX(12deg) rotateZ(-8deg); background: linear-gradient(135deg, rgb(143 186 214 / .07), rgb(113 148 193 / .03)); box-shadow: inset -11px 0 24px rgb(224 237 255 / .13), 0 26px 60px rgb(0 0 0 / .2); overflow: hidden; }
 .static-atmosphere { position: absolute; inset: 0; background: radial-gradient(ellipse at 70% 40%, rgb(139 174 217 / .4), transparent 60%), radial-gradient(ellipse at 25% 75%, rgb(96 161 154 / .27), transparent 70%); }
 .static-glass-light { position: absolute; inset: 0; border-radius: inherit; border: 6px solid rgb(194 216 255 / .08); background: linear-gradient(115deg, rgb(221 239 255 / .03), transparent 40%, rgb(221 239 255 / .045)); }
@@ -117,27 +116,27 @@
 @media (min-width: 760px) and (max-width: 1099px) {
   .scene-center { inset-inline: 23%; }
   .hero-portrait { left: -6%; width: 40%; }
-  .hero-flow { right: -6%; width: 38%; opacity: .5; }
+  .hero-flow { right: -6%; width: 38%; opacity: .65; }
 }
 @media (max-width: 759px) {
-  .portrait-intro { padding: 96px 18px 34px; }
+  .portrait-intro { padding: calc(96px + env(safe-area-inset-top, 0px)) max(18px, env(safe-area-inset-right, 0px)) 34px max(18px, env(safe-area-inset-left, 0px)); }
   .scene-stage { height: 390px; max-width: 600px; }
   .scene-center { inset: 0 5%; }
   .hero-portrait { width: 86%; height: 94%; left: -22%; bottom: 12px; opacity: .57; }
   .portrait-screen { mask-size: 5px 5px; mask-image: radial-gradient(circle, #000 1.3px, transparent 1.6px); }
-  .hero-flow { width: 92%; height: 92%; right: -27%; bottom: 12px; opacity: .32; }
+  .hero-flow { width: 92%; height: 92%; right: -27%; bottom: 12px; opacity: .46; }
   .hero { margin-top: 16px; }
   .static-glass { width: min(62%, 220px); }
 }
 @media (max-width: 599px) {
-  .site-header { top: max(14px, env(safe-area-inset-top)); }
+  .site-header { top: calc(14px + env(safe-area-inset-top, 0px)); }
   .header-inner { height: 50px; gap: 0; padding-inline: 5px; }
   .main-nav a { padding-inline: 11px; font-size: 12px; }
   .brand { width: 44px; margin-right: 1px; }
   .brand-mark { font-size: 25px; }
   .locale-switch { margin-left: 2px; padding-left: 2px; }
   .locale-switch a { min-width: 44px; }
-  .portrait-intro { padding: 93px 16px 30px; }
+  .portrait-intro { padding: calc(93px + env(safe-area-inset-top, 0px)) max(16px, env(safe-area-inset-right, 0px)) 30px max(16px, env(safe-area-inset-left, 0px)); }
   .scene-stage { height: clamp(300px, 90vw, 370px); }
   .scene-fallback-note { font-size: 10px; }
   .hero { margin-top: 14px; padding-inline: 4px; }

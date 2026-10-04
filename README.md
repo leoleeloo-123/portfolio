@@ -1,6 +1,6 @@
 # Leo Li — Interactive Systems Portfolio
 
-A bilingual personal portfolio with a screened portrait, central refractive typography/prism and an abstract data-flow field. A blue/indigo atmosphere fades into a compact single-column project index. The current hero refinement is ready for visual review; project copy and chronology remain provisional.
+A bilingual personal portfolio with a screened portrait, central refractive typography/prism and an dotted node-workflow field. A vivid left-blue/right-purple atmosphere fades into a compact single-column project index. The current hero refinement is ready for visual review; project copy and chronology remain provisional.
 
 ## Run locally
 
@@ -24,7 +24,8 @@ The production preview normally uses port 4173. `dist/` is generated and ignored
 
 ## Current experience
 
-- A larger cool portrait with coarse dots across face and body sits on the left; straight metro-style routes and circular stations support the right. Mobile keeps both behind the prism with deliberate edge cropping.
+- A larger cool portrait with coarse dots across face and body sits on the left; screened processing nodes with branch/merge connections support the right. Mobile keeps both behind the prism with deliberate edge cropping.
+- Full-bleed top color, safe-area-aware dock and hero spacing support iPhone displays. Actual Dynamic Island rendering still requires physical-device review.
 - Six-band typography/atmosphere refraction, drag with inertia, idle rotation and three reversible scroll poses. Visible controls are removed; focus the scene to use left/right arrow keys and Home.
 - Compact project rows with character-scramble reveals, hover/focus dimming and native expandable summaries. Dates stay unset until verified.
 - English and Simplified Chinese routes preserve the reading anchor and scene identity on language switches.
@@ -50,7 +51,7 @@ The production preview normally uses port 4173. `dist/` is generated and ignored
 - [Project brief](docs/project-brief.md): scope, facts and deferred content.
 - [Visual direction](docs/visual-direction.md): design system, references and motion.
 - [Progress](docs/progress.md): current checks, cleanup and remaining limits.
-- [Hero review](docs/hero-composition-review.md): current desktop/mobile composition and interaction checks, with [screenshots](evidence/atmosphere-hero/).
+- [Hero review](docs/hero-composition-review.md): current desktop/mobile composition and interaction checks, with [screenshots](evidence/workflow-atmosphere/).
 - [Portrait provenance](docs/asset-processing.md): image processing and fidelity limits.
 
 Historical drafts, unused sections, raw recordings and the original photograph are retained locally under `archive/`, excluded from Git and the app build. Only the transparent portrait derivative is served by the website. Manrope's OFL license is included in `public/licenses/`.

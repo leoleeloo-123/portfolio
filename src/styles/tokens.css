@@ -7,10 +7,10 @@
   --color-faint: #767d89;
   --color-border: #30333a;
   --color-accent: #b4c7ec;
-  --hero-top: #192749;
-  --hero-middle: #151d31;
-  --hero-blue-glow: 43 79 148;
-  --hero-violet-glow: 89 63 144;
+  --hero-top: #183b91;
+  --hero-middle: #131c37;
+  --hero-blue-glow: 0 94 245;
+  --hero-violet-glow: 116 44 220;
   --font-sans: 'Manrope Variable', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif;
   --font-mono: 'Cascadia Code', 'SFMono-Regular', Consolas, monospace;
   --space-1: .25rem;

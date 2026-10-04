@@ -1,15 +1,15 @@
 # Progress — 2026-10-04
 
-## Current checkpoint: coarse portrait and metro-style hero
+## Current checkpoint: dotted workflow atmosphere
 
-Implemented the owner's confirmed adjustments: full face/body dot mask, larger desktop portrait and workflow, straight metro-style lines with circular stations, and compact overlapping side layers behind the Cube. Removed visible rotation/reset buttons while preserving direct manipulation, keyboard arrows/Home, idle/inertia and reversible scroll poses.
+Replaced the right-side metro geometry with five abstract processing nodes and orthogonal branch/merge connections. Circular screening, a sparse particle field, soft depth and edge fade align it with the portrait. The upper-left blue and upper-right purple are stronger, fading down into graphite. Chinese scene copy is now 业财税 / 工作流 / 数字化; English remains Business / Workflows / Systems.
 
-Scene text now matches the owner's supplied English and Chinese lines. Longer copy fits independently per line in the refractive texture and the static alternative. The 30-second visible loading budget and Vercel locale/slash repair remain.
+Added viewport-fit=cover, root background color, blue theme-color and safe-area-aware dock/hero spacing for iPhone top-edge coverage. Actual Dynamic Island/Safari chrome behavior still requires a physical device.
 
-Build and lint passed. Responsive, real WebGL, keyboard focus, native drag/scroll, offscreen pause, disclosure/locale retention and static/reduced branches were checked. See hero-composition-review.md and evidence/metro-hero/ for the actual sizes and evidence. Physical-phone/GPU performance remains unmeasured. Detailed case studies remain deferred.
+Build/lint passed. Both locales at seven widths showed no horizontal overflow, one ready WebGL canvas, five screened nodes and no central buttons. Static/reduced-motion branches and keyboard focus passed. See [hero review](hero-composition-review.md) and evidence/workflow-atmosphere/. Detailed case studies remain deferred.
 
-## Repository and hosting history
+## Repository and hosting
 
-The owner authorized GitHub synchronization and repair of their existing Vercel project leo-li. Prior production routing/loading revision be66308 passed HTTP and browser checks; evidence-only commit 76f1fa0 also deployed READY. The current design commit 0e23b38 deployed READY as dpl_5a2iRXiNTykAU8zQJ5QPnpwMro8A. Both locale URLs and the current JS/CSS/scene/portrait assets returned 200 with correct MIME types; missing JS remained 404. Live English desktop and Chinese 390px WebGL scenes reached ready with the new copy, one dotted photo, no central buttons or horizontal overflow, and no application console errors. See evidence/metro-hero/production-* for screenshots and HTTP results. No additional cloud projects or backend were created.
+The owner authorized GitHub synchronization and repair of the existing Vercel project leo-li. Prior source revision 0e23b38 and evidence revision 4190342 deployed successfully; historical evidence is under evidence/metro-hero/ and evidence/vercel-fix/.
 
-The earlier crystal/index base is preserved at 51b748f. Drafts, unused source and original assets remain archived and ignored. Previous active documents are copied under archive/hero-before-metro/docs/. README remains the run/edit/documentation index; older screenshot folders describe their historical revisions.
+This refinement is locally verified and awaits the existing main-branch integration. No additional cloud projects or backend are created. Prior documents remain under archive/hero-before-workflow/docs/, ignored with other historical drafts and raw assets. README is the run/edit/documentation index.

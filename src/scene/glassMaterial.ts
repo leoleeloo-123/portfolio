@@ -114,9 +114,9 @@ export function createHeadlineCanvas(lines: readonly string[], aspect = 1.5) {
 /** A cool environment belongs to the optical capture, not the visible canvas. */
 export function createEnvironmentCanvas() {
   const { canvas, context } = canvasWithContext(768)
-  const gradient = context.createLinearGradient(0, 0, 300, 768)
-  gradient.addColorStop(0, '#24386b')
-  gradient.addColorStop(.45, '#202544')
+  const gradient = context.createLinearGradient(0, 0, 600, 768)
+  gradient.addColorStop(0, '#1252be')
+  gradient.addColorStop(.4, '#413273')
   gradient.addColorStop(1, '#101623')
   context.fillStyle = gradient
   context.fillRect(0, 0, 768, 768)

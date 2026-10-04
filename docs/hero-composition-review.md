@@ -1,29 +1,28 @@
 # Hero composition review — 2026-10-04
 
-The owner confirmed full-face coarse screening, larger desktop supporting layers, metro-style routes, overlapping mobile composition, and removal of visible turn/reset controls.
+## Current refinement
 
-## Current composition
+The owner requested workflow intelligence as visual atmosphere, stronger upper blue/purple, compact Chinese scene wording, and iPhone top-edge background coverage.
 
-One image layer renders the supplied cutout with a cool filter and a circular dot mask across the entire face/body. There is no continuous photo base or clean-face mask. Dots repeat at 6px desktop and 5px compact. The source image is unchanged.
+The right field now consists of five screened processing blocks with orthogonal input convergence, branching and output merging. A circular dot mask, sparse particles, blurred depth and edge fade echo the portrait. Station rings and transit routes are removed. Desktop preserves portrait / prism / workflow; compact screens keep the supporting layers behind the prism with local edge cropping.
 
-Desktop portrait and routes fill more of the 1440px-bounded scene. The workflow has four straight horizontal/vertical/45-degree routes, circular stations and larger interchange rings. On compact screens both layers remain behind the central prism and are clipped within the scene, rather than becoming a row beneath it.
+English: Business / Workflows / Systems. Chinese: 业财税 / 工作流 / 数字化. Real-time and static alternatives share the copy. The portrait asset and full-face coarse screening are unchanged.
 
-English: Business / Workflows / Systems. Chinese: 业务 x 财务 x 税务 / 自动化工作流 / 数字化系统. The optical texture fits each line independently on stable baselines. The CSS still prism has matching copy and responsive type.
+The upper-left blue and upper-right purple are stronger and dissolve vertically into graphite. The optical environment follows the new palette. The page uses viewport-fit=cover, root background color, a blue theme-color and safe-area-aware dock/hero spacing. Actual Safari/Dynamic Island painting cannot be verified in a Windows browser viewport.
 
-Visible rotation/reset buttons and the idle drag hint are removed. Direct drag/inertia/scroll remain. The focusable scene supports ArrowLeft/ArrowRight/Home with localized instructions and a visible focus outline. Failure-only reload remains available when initialization actually fails or times out.
-
-## Verification
+## Local verification
 
 - TypeScript production build and ESLint passed.
-- Chinese checked at 320, 360, 390, 768, 1024, 1440, 1920px; English at 320, 390, 768, 1024, 1440, 1920px. No horizontal overflow; zero central buttons in normal mode; one portrait image and an active WebGL scene.
-- DOM geometry confirms both supporting layers overlap the central scene vertically and horizontally at compact widths. Their intentional edge cropping stays local to the hero.
-- Native desktop drag released cleanly. Keyboard arrows/Home operated from the scene focus target; focus-visible and shortcut metadata were present.
-- Wheel over mobile canvas reached scrollY 768 and phase 2, paused WebGL and route signals offscreen. Native Deloitte disclosure and its expanded state persisted across locale switching with one canvas.
-- Mobile forced-static branch: no canvas, all three Chinese lines within the viewport, supporting image loaded. Forced reduced-motion branch: zero canvas, no route animation, scrolling auto.
-- No application console errors; the existing dependency-level Three Clock deprecation warning remains.
+- Both locales checked at 320, 360, 390, 768, 1024, 1440 and 1920px. No document horizontal overflow; one ready WebGL canvas, five workflow nodes, the screen mask and zero central buttons at every width.
+- Mobile DOM geometry confirms both supporting elements overlap the center and remain locally cropped.
+- Desktop English and mobile Chinese screenshots inspected for color balance, readable node structure, point treatment and composition.
+- Mobile Chinese forced-static: zero canvas, all three lines within the viewport. Reduced motion: zero canvas, no signal animation and automatic scrolling.
+- ArrowRight/Home retained the focusable scene and visible keyboard focus. No application console errors; the existing Three Clock dependency deprecation warning remains.
 
-Evidence: evidence/metro-hero/ contains desktop/mobile screenshots in both languages, a mobile static fallback, and responsive DOM observations. Tests use the Windows in-app browser; real phones/GPU/battery behavior remains unmeasured. Screenshots capture different authored interaction poses because rotation continues.
+Evidence: [workflow-atmosphere](../evidence/workflow-atmosphere/), including screenshots and responsive observations. Browser checks establish layout and rendering; physical iPhone safe-area/chrome behavior and GPU/battery performance remain unmeasured.
 
-Production application revision 0e23b38 deployed READY to leo-li.vercel.app. Live desktop English and mobile Chinese checks confirmed the new text, one dotted photo, real WebGL, straight routes and zero central controls. HTTP checks confirmed the locale pages and current assets load successfully; no application console errors were captured. Production screenshots and HTTP results are also in evidence/metro-hero/.
+## Review checkpoint
 
-The previous three-part hero review/documents are retained in Git history and locally under archive/hero-before-metro/docs/. Earlier atmosphere and Vercel repair evidence describes its own revision.
+Review the shared portrait/workflow texture, strength of the upper color and balance behind the compact prism. Detailed case studies remain deferred. Earlier metro-style documents are retained in Git history and locally under archive/hero-before-workflow/docs/.
+
+Production verification will be appended after the existing Git integration deploys this revision.
