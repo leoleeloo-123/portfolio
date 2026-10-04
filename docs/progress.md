@@ -12,6 +12,8 @@ See [hero-composition-review.md](hero-composition-review.md), evidence/atmospher
 
 ## Preserved project organization and history
 
+The atmospheric hero and loading/routing repair are synchronized to GitHub and the existing Vercel production project. The final application revision `be66308` passed production HTTP and desktop/mobile browser checks; subsequent evidence-only commits do not change the application. Both locale routes and static assets load correctly. No additional cloud projects or backend were created.
+
 The prior approved crystal/index base was synchronized to GitHub main at commit 51b748f. Earlier drafts, unused source, raw recording frames and original assets remain locally archived and excluded from Git/ESLint. The previous approved portrait PNG has also been archived; only the new active cutout is served.
 
 README remains the concise run/edit/documentation index. Earlier crystal/index and refresh reviews describe their own historical revisions and are not current design screenshots. Previous active documents were copied to archive/hero-before-atmosphere/docs/ before this update.
