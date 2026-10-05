@@ -11,6 +11,14 @@
   --hero-middle: #131c37;
   --hero-blue-glow: 0 94 245;
   --hero-violet-glow: 116 44 220;
+  --hero-artwork-width: 1440px;
+  --hero-dot-spacing: 6px;
+  --hero-dot-radius: 1.65px;
+  --hero-field-rgb: 172 195 246;
+  --hero-field-contrast: .3;
+  --hero-field-center-opacity: .58;
+  --hero-field-solid-stop: 38%;
+  --hero-field-fade-stop: 73%;
   --font-sans: 'Manrope Variable', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif;
   --font-mono: 'Cascadia Code', 'SFMono-Regular', Consolas, monospace;
   --space-1: .25rem;

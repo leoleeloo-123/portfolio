@@ -1,0 +1,40 @@
+{
+  "desktop": {
+    "decorativePointerEvents": "none",
+    "dragClass": "",
+    "focusTarget": "scene-viewport",
+    "focusVisible": true,
+    "sceneReady": "true"
+  },
+  "mobileScroll": {
+    "active": "false",
+    "overflow": false,
+    "phase": "2",
+    "scrollY": 768.6666870117188
+  },
+  "localeDisclosure": {
+    "canvases": 1,
+    "disclosureOpen": true,
+    "locale": "zh-Hans"
+  },
+  "static": {
+    "canvases": 0,
+    "lines": [
+      "业财税",
+      "工作流",
+      "数字化"
+    ],
+    "mode": "fallback",
+    "nodes": 5,
+    "overflow": false,
+    "portraitLoaded": true
+  },
+  "reduced": {
+    "canvases": 0,
+    "fieldAnimation": "none",
+    "mode": "reduced-motion",
+    "overflow": false,
+    "scroll": "auto"
+  },
+  "errors": []
+}

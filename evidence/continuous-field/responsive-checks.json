@@ -1,0 +1,652 @@
+[
+  {
+    "canvases": 1,
+    "center": {
+      "bottom": 393,
+      "height": 300,
+      "width": 218.14584350585935,
+      "x": 43.26041793823242,
+      "y": 93
+    },
+    "field": {
+      "bottom": 393,
+      "height": 300,
+      "width": 272.66668701171875,
+      "x": 16,
+      "y": 93
+    },
+    "fieldAnimations": "none",
+    "grid": "5px 5px",
+    "header": {
+      "bottom": 65.33333587646484,
+      "height": 51.33333587646485,
+      "width": 257,
+      "x": 23.83333396911621,
+      "y": 14
+    },
+    "individualPortraitMask": "none",
+    "individualWorkflowMask": "none",
+    "intro": {
+      "bottom": 610.1041717529297,
+      "height": 203.1041717529297,
+      "width": 272.66668701171875,
+      "x": 16,
+      "y": 407
+    },
+    "locale": "zh-Hans",
+    "mode": "webgl",
+    "nodeCount": 5,
+    "overflow": false,
+    "portrait": {
+      "bottom": 381,
+      "height": 282,
+      "width": 234.48959350585935,
+      "x": -57.61458587646485,
+      "y": 99
+    },
+    "ready": "true",
+    "rectangularNodes": 0,
+    "sharedScreen": true,
+    "stage": {
+      "bottom": 393,
+      "height": 300,
+      "width": 272.66668701171875,
+      "x": 16,
+      "y": 93
+    },
+    "text": "业财税 / 工作流 / 数字化使用左右方向键旋转，按 Home 键复位。",
+    "width": 320,
+    "workflow": {
+      "bottom": 379,
+      "height": 276,
+      "width": 250.84375,
+      "x": 54.17708587646485,
+      "y": 103
+    }
+  },
+  {
+    "canvases": 1,
+    "center": {
+      "bottom": 444,
+      "height": 351,
+      "width": 274.1458435058594,
+      "x": 50.26041793823242,
+      "y": 93
+    },
+    "field": {
+      "bottom": 444,
+      "height": 351,
+      "width": 342.66668701171875,
+      "x": 16,
+      "y": 93
+    },
+    "fieldAnimations": "none",
+    "grid": "5px 5px",
+    "header": {
+      "bottom": 65.33333587646484,
+      "height": 51.33333587646485,
+      "width": 257,
+      "x": 58.83333587646485,
+      "y": 14
+    },
+    "individualPortraitMask": "none",
+    "individualWorkflowMask": "none",
+    "intro": {
+      "bottom": 669.6458435058594,
+      "height": 211.64584350585935,
+      "width": 342.66668701171875,
+      "x": 16,
+      "y": 458
+    },
+    "locale": "zh-Hans",
+    "mode": "webgl",
+    "nodeCount": 5,
+    "overflow": false,
+    "portrait": {
+      "bottom": 432,
+      "height": 329.9375,
+      "width": 294.6875,
+      "x": -76.51042175292969,
+      "y": 102.0625
+    },
+    "ready": "true",
+    "rectangularNodes": 0,
+    "sharedScreen": true,
+    "stage": {
+      "bottom": 444,
+      "height": 351,
+      "width": 342.66668701171875,
+      "x": 16,
+      "y": 93
+    },
+    "text": "业财税 / 工作流 / 数字化使用左右方向键旋转，按 Home 键复位。",
+    "width": 390,
+    "workflow": {
+      "bottom": 430.0000228881836,
+      "height": 322.91668701171875,
+      "width": 315.25,
+      "x": 63.96875,
+      "y": 107.08333587646484
+    }
+  },
+  {
+    "canvases": 1,
+    "center": {
+      "bottom": 568,
+      "height": 460,
+      "width": 371.8958435058594,
+      "x": 190.3854217529297,
+      "y": 108
+    },
+    "field": {
+      "bottom": 568,
+      "height": 460,
+      "width": 688.6666870117188,
+      "x": 32,
+      "y": 108
+    },
+    "fieldAnimations": "none",
+    "grid": "6px 6px",
+    "header": {
+      "bottom": 75.33333587646484,
+      "height": 55.33333587646485,
+      "width": 300,
+      "x": 226.33334350585935,
+      "y": 20
+    },
+    "individualPortraitMask": "none",
+    "individualWorkflowMask": "none",
+    "intro": {
+      "bottom": 773.9270935058594,
+      "height": 191.92709350585935,
+      "width": 620,
+      "x": 66.33333587646484,
+      "y": 582
+    },
+    "locale": "zh-Hans",
+    "mode": "webgl",
+    "nodeCount": 5,
+    "overflow": false,
+    "portrait": {
+      "bottom": 556,
+      "height": 441.59375,
+      "width": 275.4583435058594,
+      "x": -9.3125,
+      "y": 114.40625
+    },
+    "ready": "true",
+    "rectangularNodes": 0,
+    "sharedScreen": true,
+    "stage": {
+      "bottom": 568,
+      "height": 460,
+      "width": 688.6666870117188,
+      "x": 32,
+      "y": 108
+    },
+    "text": "业财税 / 工作流 / 数字化使用左右方向键旋转，按 Home 键复位。",
+    "width": 768,
+    "workflow": {
+      "bottom": 554.0000152587891,
+      "height": 432.3958435058594,
+      "width": 261.6875,
+      "x": 458.9791870117187,
+      "y": 121.60417175292967
+    }
+  },
+  {
+    "canvases": 1,
+    "center": {
+      "bottom": 648,
+      "height": 540,
+      "width": 680.3333740234375,
+      "x": 372.1666870117187,
+      "y": 108
+    },
+    "field": {
+      "bottom": 648,
+      "height": 540,
+      "width": 1360.666748046875,
+      "x": 32,
+      "y": 108
+    },
+    "fieldAnimations": "none",
+    "grid": "6px 6px",
+    "header": {
+      "bottom": 75.33333587646484,
+      "height": 55.33333587646485,
+      "width": 300,
+      "x": 562.3333740234375,
+      "y": 20
+    },
+    "individualPortraitMask": "none",
+    "individualWorkflowMask": "none",
+    "intro": {
+      "bottom": 871.6041717529297,
+      "height": 209.6041717529297,
+      "width": 620,
+      "x": 402.3333435058594,
+      "y": 662
+    },
+    "locale": "zh-Hans",
+    "mode": "webgl",
+    "nodeCount": 5,
+    "overflow": false,
+    "portrait": {
+      "bottom": 636.0000457763672,
+      "height": 518.3958740234375,
+      "width": 517.0521240234375,
+      "x": -8.8125,
+      "y": 117.60417175292967
+    },
+    "ready": "true",
+    "rectangularNodes": 0,
+    "sharedScreen": true,
+    "stage": {
+      "bottom": 648,
+      "height": 540,
+      "width": 1360.666748046875,
+      "x": 32,
+      "y": 108
+    },
+    "text": "业财税 / 工作流 / 数字化使用左右方向键旋转，按 Home 键复位。",
+    "width": 1440,
+    "workflow": {
+      "bottom": 634,
+      "height": 507.59375,
+      "width": 476.2291870117187,
+      "x": 875.625,
+      "y": 126.40625
+    }
+  },
+  {
+    "canvases": 1,
+    "center": {
+      "bottom": 648,
+      "height": 540,
+      "width": 720,
+      "x": 912.3333740234376,
+      "y": 108
+    },
+    "field": {
+      "bottom": 648,
+      "height": 540,
+      "width": 1440,
+      "x": 552.3333740234375,
+      "y": 108
+    },
+    "fieldAnimations": "none",
+    "grid": "6px 6px",
+    "header": {
+      "bottom": 75.33333587646484,
+      "height": 55.33333587646485,
+      "width": 300,
+      "x": 1122.3333740234375,
+      "y": 20
+    },
+    "individualPortraitMask": "none",
+    "individualWorkflowMask": "none",
+    "intro": {
+      "bottom": 871.6041717529297,
+      "height": 209.6041717529297,
+      "width": 620,
+      "x": 962.3333740234376,
+      "y": 662
+    },
+    "locale": "zh-Hans",
+    "mode": "webgl",
+    "nodeCount": 5,
+    "overflow": false,
+    "portrait": {
+      "bottom": 636.0000457763672,
+      "height": 518.3958740234375,
+      "width": 547.1979370117188,
+      "x": 509.1354370117187,
+      "y": 117.60417175292967
+    },
+    "ready": "true",
+    "rectangularNodes": 0,
+    "sharedScreen": true,
+    "stage": {
+      "bottom": 648,
+      "height": 540,
+      "width": 1440,
+      "x": 552.3333740234375,
+      "y": 108
+    },
+    "text": "业财税 / 工作流 / 数字化使用左右方向键旋转，按 Home 键复位。",
+    "width": 2560,
+    "workflow": {
+      "bottom": 634,
+      "height": 507.59375,
+      "width": 504,
+      "x": 1445.135498046875,
+      "y": 126.40625
+    }
+  },
+  {
+    "canvases": 1,
+    "center": {
+      "bottom": 393,
+      "height": 300,
+      "width": 218.14584350585935,
+      "x": 43.26041793823242,
+      "y": 93
+    },
+    "field": {
+      "bottom": 393,
+      "height": 300,
+      "width": 272.66668701171875,
+      "x": 16,
+      "y": 93
+    },
+    "fieldAnimations": "none",
+    "grid": "5px 5px",
+    "header": {
+      "bottom": 65.33333587646484,
+      "height": 51.33333587646485,
+      "width": 258.625,
+      "x": 23.02083396911621,
+      "y": 14
+    },
+    "individualPortraitMask": "none",
+    "individualWorkflowMask": "none",
+    "intro": {
+      "bottom": 647.1458435058594,
+      "height": 240.14584350585935,
+      "width": 272.66668701171875,
+      "x": 16,
+      "y": 407
+    },
+    "locale": "en",
+    "mode": "webgl",
+    "nodeCount": 5,
+    "overflow": false,
+    "portrait": {
+      "bottom": 381,
+      "height": 282,
+      "width": 234.48959350585935,
+      "x": -57.61458587646485,
+      "y": 99
+    },
+    "ready": "true",
+    "rectangularNodes": 0,
+    "sharedScreen": true,
+    "stage": {
+      "bottom": 393,
+      "height": 300,
+      "width": 272.66668701171875,
+      "x": 16,
+      "y": 93
+    },
+    "text": "Business / Workflows / SystemsUse the left and right arrow keys to rotate. Press Home to reset.",
+    "width": 320,
+    "workflow": {
+      "bottom": 379,
+      "height": 276,
+      "width": 250.84375,
+      "x": 54.17708587646485,
+      "y": 103
+    }
+  },
+  {
+    "canvases": 1,
+    "center": {
+      "bottom": 444,
+      "height": 351,
+      "width": 274.1458435058594,
+      "x": 50.26041793823242,
+      "y": 93
+    },
+    "field": {
+      "bottom": 444,
+      "height": 351,
+      "width": 342.66668701171875,
+      "x": 16,
+      "y": 93
+    },
+    "fieldAnimations": "none",
+    "grid": "5px 5px",
+    "header": {
+      "bottom": 65.33333587646484,
+      "height": 51.33333587646485,
+      "width": 258.625,
+      "x": 58.02083587646485,
+      "y": 14
+    },
+    "individualPortraitMask": "none",
+    "individualWorkflowMask": "none",
+    "intro": {
+      "bottom": 670.3958435058594,
+      "height": 212.39584350585935,
+      "width": 342.66668701171875,
+      "x": 16,
+      "y": 458
+    },
+    "locale": "en",
+    "mode": "webgl",
+    "nodeCount": 5,
+    "overflow": false,
+    "portrait": {
+      "bottom": 432,
+      "height": 329.9375,
+      "width": 294.6875,
+      "x": -76.51042175292969,
+      "y": 102.0625
+    },
+    "ready": "true",
+    "rectangularNodes": 0,
+    "sharedScreen": true,
+    "stage": {
+      "bottom": 444,
+      "height": 351,
+      "width": 342.66668701171875,
+      "x": 16,
+      "y": 93
+    },
+    "text": "Business / Workflows / SystemsUse the left and right arrow keys to rotate. Press Home to reset.",
+    "width": 390,
+    "workflow": {
+      "bottom": 430.0000228881836,
+      "height": 322.91668701171875,
+      "width": 315.25,
+      "x": 63.96875,
+      "y": 107.08333587646484
+    }
+  },
+  {
+    "canvases": 1,
+    "center": {
+      "bottom": 568,
+      "height": 460,
+      "width": 371.8958435058594,
+      "x": 190.3854217529297,
+      "y": 108
+    },
+    "field": {
+      "bottom": 568,
+      "height": 460,
+      "width": 688.6666870117188,
+      "x": 32,
+      "y": 108
+    },
+    "fieldAnimations": "none",
+    "grid": "6px 6px",
+    "header": {
+      "bottom": 75.33333587646484,
+      "height": 55.33333587646485,
+      "width": 301.76043701171875,
+      "x": 225.453125,
+      "y": 20
+    },
+    "individualPortraitMask": "none",
+    "individualWorkflowMask": "none",
+    "intro": {
+      "bottom": 803.1979217529297,
+      "height": 221.1979217529297,
+      "width": 620,
+      "x": 66.33333587646484,
+      "y": 582
+    },
+    "locale": "en",
+    "mode": "webgl",
+    "nodeCount": 5,
+    "overflow": false,
+    "portrait": {
+      "bottom": 556,
+      "height": 441.59375,
+      "width": 275.4583435058594,
+      "x": -9.3125,
+      "y": 114.40625
+    },
+    "ready": "true",
+    "rectangularNodes": 0,
+    "sharedScreen": true,
+    "stage": {
+      "bottom": 568,
+      "height": 460,
+      "width": 688.6666870117188,
+      "x": 32,
+      "y": 108
+    },
+    "text": "Business / Workflows / SystemsUse the left and right arrow keys to rotate. Press Home to reset.",
+    "width": 768,
+    "workflow": {
+      "bottom": 554.0000152587891,
+      "height": 432.3958435058594,
+      "width": 261.6875,
+      "x": 458.9791870117187,
+      "y": 121.60417175292967
+    }
+  },
+  {
+    "canvases": 1,
+    "center": {
+      "bottom": 648,
+      "height": 540,
+      "width": 680.3333740234375,
+      "x": 372.1666870117187,
+      "y": 108
+    },
+    "field": {
+      "bottom": 648,
+      "height": 540,
+      "width": 1360.666748046875,
+      "x": 32,
+      "y": 108
+    },
+    "fieldAnimations": "none",
+    "grid": "6px 6px",
+    "header": {
+      "bottom": 75.33333587646484,
+      "height": 55.33333587646485,
+      "width": 301.76043701171875,
+      "x": 561.453125,
+      "y": 20
+    },
+    "individualPortraitMask": "none",
+    "individualWorkflowMask": "none",
+    "intro": {
+      "bottom": 902.5625,
+      "height": 240.5625,
+      "width": 620,
+      "x": 402.3333435058594,
+      "y": 662
+    },
+    "locale": "en",
+    "mode": "webgl",
+    "nodeCount": 5,
+    "overflow": false,
+    "portrait": {
+      "bottom": 636.0000457763672,
+      "height": 518.3958740234375,
+      "width": 517.0521240234375,
+      "x": -8.8125,
+      "y": 117.60417175292967
+    },
+    "ready": "true",
+    "rectangularNodes": 0,
+    "sharedScreen": true,
+    "stage": {
+      "bottom": 648,
+      "height": 540,
+      "width": 1360.666748046875,
+      "x": 32,
+      "y": 108
+    },
+    "text": "Business / Workflows / SystemsUse the left and right arrow keys to rotate. Press Home to reset.",
+    "width": 1440,
+    "workflow": {
+      "bottom": 634,
+      "height": 507.59375,
+      "width": 476.2291870117187,
+      "x": 875.625,
+      "y": 126.40625
+    }
+  },
+  {
+    "canvases": 1,
+    "center": {
+      "bottom": 648,
+      "height": 540,
+      "width": 720,
+      "x": 912.3333740234376,
+      "y": 108
+    },
+    "field": {
+      "bottom": 648,
+      "height": 540,
+      "width": 1440,
+      "x": 552.3333740234375,
+      "y": 108
+    },
+    "fieldAnimations": "none",
+    "grid": "6px 6px",
+    "header": {
+      "bottom": 75.33333587646484,
+      "height": 55.33333587646485,
+      "width": 301.76043701171875,
+      "x": 1121.453125,
+      "y": 20
+    },
+    "individualPortraitMask": "none",
+    "individualWorkflowMask": "none",
+    "intro": {
+      "bottom": 902.5625,
+      "height": 240.5625,
+      "width": 620,
+      "x": 962.3333740234376,
+      "y": 662
+    },
+    "locale": "en",
+    "mode": "webgl",
+    "nodeCount": 5,
+    "overflow": false,
+    "portrait": {
+      "bottom": 636.0000457763672,
+      "height": 518.3958740234375,
+      "width": 547.1979370117188,
+      "x": 509.1354370117187,
+      "y": 117.60417175292967
+    },
+    "ready": "true",
+    "rectangularNodes": 0,
+    "sharedScreen": true,
+    "stage": {
+      "bottom": 648,
+      "height": 540,
+      "width": 1440,
+      "x": 552.3333740234375,
+      "y": 108
+    },
+    "text": "Business / Workflows / SystemsUse the left and right arrow keys to rotate. Press Home to reset.",
+    "width": 2560,
+    "workflow": {
+      "bottom": 634,
+      "height": 507.59375,
+      "width": 504,
+      "x": 1445.135498046875,
+      "y": 126.40625
+    }
+  }
+]

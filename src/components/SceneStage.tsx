@@ -66,8 +66,13 @@ export function SceneStage({ progress, activeStage }: { progress: MotionValue<nu
   const staticView = <StaticSystem />
   return (
     <aside ref={stageRef} className="scene-stage" data-active-stage={activeStage} data-scene-active={active ? 'true' : 'false'} data-scene-mode={mode} data-scene-ready={alternative || ready ? 'true' : 'false'} aria-label={t('scene.label')}>
-      <HeroPortrait />
-      <FlowField />
+      <div className="hero-atmosphere" aria-hidden="true">
+        <div className="hero-dot-surface">
+          <div className="hero-dot-field" />
+          <HeroPortrait />
+          <FlowField />
+        </div>
+      </div>
       <p className="sr-only">{t('scene.word1')} / {t('scene.word2')} / {t('scene.word3')}</p>
       {!alternative && ready ? <p id="scene-keyboard" className="sr-only">{t('scene.keyboard')}</p> : null}
       <div className="scene-center">

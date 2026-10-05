@@ -1,6 +1,6 @@
 # Leo Li — Interactive Systems Portfolio
 
-A bilingual personal portfolio with a screened portrait, central refractive typography/prism and an dotted node-workflow field. A vivid left-blue/right-purple atmosphere fades into a compact single-column project index. The current hero refinement is ready for visual review; project copy and chronology remain provisional.
+A bilingual personal portfolio with one continuous screened field: a portrait emerges on the left, flat circular workflow nodes on the right, and refractive typography/prism in front. A vivid left-blue/right-purple atmosphere fades into a compact single-column project index. The current hero refinement is ready for visual review; project copy and chronology remain provisional.
 
 ## Run locally
 
@@ -24,7 +24,7 @@ The production preview normally uses port 4173. `dist/` is generated and ignored
 
 ## Current experience
 
-- A larger cool portrait with coarse dots across face and body sits on the left; screened processing nodes with branch/merge connections support the right. Mobile keeps both behind the prism with deliberate edge cropping.
+- A shared, softly dissolving dot field connects the portrait and circular workflow nodes. Its maximum width is 1440px; navigation and introduction stay outside it. Mobile keeps both supporting shapes behind a slightly narrower foreground, with deliberate edge cropping and unchanged artwork height.
 - Full-bleed top color, safe-area-aware dock and hero spacing support iPhone displays. Actual Dynamic Island rendering still requires physical-device review.
 - Six-band typography/atmosphere refraction, drag with inertia, idle rotation and three reversible scroll poses. Visible controls are removed; focus the scene to use left/right arrow keys and Home.
 - Compact project rows with character-scramble reveals, hover/focus dimming and native expandable summaries. Dates stay unset until verified.
@@ -37,6 +37,7 @@ The production preview normally uses port 4173. `dist/` is generated and ignored
 | Area | File or folder |
 | --- | --- |
 | Colors, typography, spacing | `src/styles/tokens.css` |
+| Shared dot field and responsive side composition | `src/styles/hero-field.css` |
 | Camera, glass, rotation, scroll poses | `src/scene/config.ts` |
 | Optical shader | `src/scene/glassMaterial.ts` |
 | Scroll progression | `src/motion/useNarrativeProgress.ts` |
@@ -51,9 +52,9 @@ The production preview normally uses port 4173. `dist/` is generated and ignored
 - [Project brief](docs/project-brief.md): scope, facts and deferred content.
 - [Visual direction](docs/visual-direction.md): design system, references and motion.
 - [Progress](docs/progress.md): current checks, cleanup and remaining limits.
-- [Hero review](docs/hero-composition-review.md): current desktop/mobile composition and interaction checks, with [screenshots](evidence/workflow-atmosphere/).
+- [Hero review](docs/continuous-field-review.md): current desktop/mobile composition and checks, with [screenshots](evidence/continuous-field/).
 - [Portrait provenance](docs/asset-processing.md): image processing and fidelity limits.
 
 Historical drafts, unused sections, raw recordings and the original photograph are retained locally under `archive/`, excluded from Git and the app build. Only the transparent portrait derivative is served by the website. Manrope's OFL license is included in `public/licenses/`.
 
-Repository: [leoleeloo-123/portfolio](https://github.com/leoleeloo-123/portfolio). Production: [leo-li.vercel.app](https://leo-li.vercel.app/). The owner authorized repair of this existing deployment. Detailed case-study expansion, physical-phone/GPU performance and SEO remain separate review items.
+Repository: [leoleeloo-123/portfolio](https://github.com/leoleeloo-123/portfolio). Production: [leo-li.vercel.app](https://leo-li.vercel.app/), The owner approved publication of the continuous-field refinement on 2026-10-05. Detailed case-study expansion, physical-phone/GPU performance and SEO remain separate review items.

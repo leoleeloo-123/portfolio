@@ -1,4 +1,4 @@
-/** A single screened cutout: the same coarse dot mask covers face and body. */
+/** The unchanged cutout shares the atmosphere's screen across face and body. */
 export function HeroPortrait() {
   return (
     <div className="hero-portrait" aria-hidden="true">

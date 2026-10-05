@@ -6,9 +6,9 @@ Narrative: Finance & Accounting → Data → Automation → Tax Technology → A
 
 ## Current visual milestone
 
-The owner confirmed the current hero refinement on 2026-10-04: a larger cool professional portrait with coarse dots across face and body on the left, central bold typography with a refractive glass prism, and atmospheric dotted processing nodes with orthogonal branch/merge connections on the right. The portrait stays outside WebGL. A stronger blue-left/purple-right upper atmosphere fades down into graphite. Full-bleed viewport and safe-area spacing support iPhone displays.
+The owner confirmed the current hero refinement on 2026-10-04: a larger cool professional portrait with coarse dots across face and body on the left, central bold typography with a refractive glass prism, and flat circular workflow nodes with orthogonal branch/merge connections, emerging with the portrait from a shared continuous dot field on the right. The portrait stays outside WebGL. A stronger blue-left/purple-right upper atmosphere fades down into graphite. Full-bleed viewport and safe-area spacing support iPhone displays.
 
-The center has primary visual weight; both sides support it through matching texture and color. On mobile, the portrait and routes remain behind the prism to the left/right, with deliberate edge cropping. Visible rotation/reset controls are removed; direct drag and keyboard arrows/Home remain. Keep the fixed dock, introduction, three provisional rows, ordinary scrolling and three reversible poses. Detailed content expansion remains deferred.
+The center has primary visual weight. One orderly dot grid and softly dissolving envelope connect both sides behind it; the field caps at 1440px and stays outside the navigation and introduction. On mobile, the portrait and routes remain behind the prism to the left/right, with deliberate edge cropping. Visible rotation/reset controls are removed; direct drag and keyboard arrows/Home remain. Keep the fixed dock, introduction, three provisional rows, ordinary scrolling and three reversible poses. Detailed content expansion remains deferred.
 
 Owner-specified scene copy: Business / Workflows / Systems; 业财税 / 工作流 / 数字化. Each line fits independently without changing its wording.
 
@@ -32,6 +32,6 @@ Current owner-supplied portrait: public/images/leo-portrait-professional.png. So
 
 ## Boundaries
 
-Repository synchronization to leoleeloo-123/portfolio and repair of the owner's existing Vercel project leo-li were authorized on 2026-10-04. The prior approved base is preserved in Git history. Archive remains ignored. Do not change repository visibility, create additional cloud projects, backend or live APIs.
+The owner approved GitHub commit/push and publication of the continuous-field refinement to the existing Vercel project on 2026-10-05. Earlier repository synchronization to leoleeloo-123/portfolio and repair of the owner's existing Vercel project leo-li were authorized on 2026-10-04. The prior approved base is preserved in Git history. Archive remains ignored. Do not change repository visibility, create additional cloud projects, backend or live APIs.
 
 Future modules remain Deloitte workflow visualization, Tax Engine synthetic SaaS demonstration, Navi Material CRM showcase and Fitness OS AI interaction. SEO and additional domain decisions require a later milestone.

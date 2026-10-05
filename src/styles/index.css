@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 @import './tokens.css';
+@import './hero-field.css';
 
 @layer base {
   * { box-sizing: border-box; }
@@ -30,20 +31,8 @@
 .locale-switch a { min-width: 44px; padding-inline: 8px; font-size: 12px; color: var(--color-faint); }
 .locale-switch a[aria-current] { color: var(--color-fg); background: rgb(255 255 255 / .04); }
 .portrait-intro { margin-inline: auto; padding: calc(108px + env(safe-area-inset-top, 0px)) max(32px, env(safe-area-inset-right, 0px)) 54px max(32px, env(safe-area-inset-left, 0px)); position: relative; isolation: isolate; background: linear-gradient(180deg, transparent 0%, rgb(16 17 20 / .3) 32%, rgb(16 17 20 / .87) 73%, var(--color-bg) 100%), radial-gradient(ellipse at 15% 0%, rgb(var(--hero-blue-glow) / .9), transparent 70%), radial-gradient(ellipse at 94% 0%, rgb(var(--hero-violet-glow) / .82), transparent 70%), linear-gradient(105deg, #074cae, #483090); }
-.scene-stage { position: relative; height: clamp(460px, 38vw, 540px); width: min(100%, 1440px); margin-inline: auto; isolation: isolate; overflow: clip; }
-.scene-center { position: absolute; inset: 0 25%; z-index: 2; }
-.hero-portrait { position: absolute; left: -3%; bottom: 12px; width: 38%; height: 96%; opacity: .92; pointer-events: none; mask-image: linear-gradient(#000 62%, rgb(0 0 0 / .8) 80%, transparent 100%); }
-.portrait-filter { position: absolute; }
-.hero-portrait img { position: absolute; width: 100%; height: 100%; object-fit: contain; object-position: center bottom; filter: url(#portrait-cool); }
-.portrait-screen { opacity: 1; mask-image: radial-gradient(circle, #000 1.6px, transparent 1.9px); mask-size: 6px 6px; mask-repeat: repeat; }
-.hero-flow { position: absolute; right: -3%; bottom: 14px; width: 35%; height: 94%; opacity: .78; color: #b7caff; pointer-events: none; mask-image: radial-gradient(ellipse at 48% 48%, #000 24%, rgb(0 0 0 / .75) 55%, transparent 78%); }
-.hero-flow svg { width: 100%; height: 100%; overflow: visible; }
-.flow-signal { stroke-dasharray: 3 97; opacity: .5; animation: flow-travel 9s linear infinite; }
-.flow-signal-1 { animation-delay: -3s; animation-duration: 11s; }
-.flow-signal-2 { animation-delay: -6s; animation-duration: 13s; }
-@keyframes flow-travel { from { stroke-dashoffset: 100; } to { stroke-dashoffset: 0; } }
-.scene-stage[data-scene-active="false"] .flow-signal { animation-play-state: paused; }
-.scene-stage[data-scene-mode="reduced-motion"] .flow-signal { animation: none; opacity: 0; }
+.scene-stage { position: relative; height: clamp(460px, 38vw, 540px); width: min(100%, var(--hero-artwork-width)); margin-inline: auto; isolation: isolate; overflow: clip; }
+.scene-center { position: absolute; inset: 0 var(--hero-center-inset); z-index: 2; }
 .scene-viewport { position: absolute; inset: 0 0 28px; container-type: inline-size; }
 .scene-viewport:focus-visible { outline: 1px solid var(--color-accent); outline-offset: -5px; border-radius: 24px; }
 .scene-viewport canvas { display: block; outline: none; touch-action: pan-y; cursor: grab; }
@@ -113,18 +102,9 @@
 :lang(zh-Hans) .hero-name { letter-spacing: -.04em; font-size: clamp(2.3rem, 4vw, 3.15rem); line-height: 1.3; }
 :lang(zh-Hans) .eyebrow { letter-spacing: 0; }
 :lang(zh-Hans) h2, :lang(zh-Hans) h3 { letter-spacing: -.025em; }
-@media (min-width: 760px) and (max-width: 1099px) {
-  .scene-center { inset-inline: 23%; }
-  .hero-portrait { left: -6%; width: 40%; }
-  .hero-flow { right: -6%; width: 38%; opacity: .65; }
-}
 @media (max-width: 759px) {
   .portrait-intro { padding: calc(96px + env(safe-area-inset-top, 0px)) max(18px, env(safe-area-inset-right, 0px)) 34px max(18px, env(safe-area-inset-left, 0px)); }
   .scene-stage { height: 390px; max-width: 600px; }
-  .scene-center { inset: 0 5%; }
-  .hero-portrait { width: 86%; height: 94%; left: -22%; bottom: 12px; opacity: .57; }
-  .portrait-screen { mask-size: 5px 5px; mask-image: radial-gradient(circle, #000 1.3px, transparent 1.6px); }
-  .hero-flow { width: 92%; height: 92%; right: -27%; bottom: 12px; opacity: .46; }
   .hero { margin-top: 16px; }
   .static-glass { width: min(62%, 220px); }
 }

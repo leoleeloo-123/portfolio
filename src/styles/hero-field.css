@@ -1,0 +1,105 @@
+/* One stage-local screen gives the portrait, workflow and ambient light the
+   same dot origin. The outer mask only dissolves this decorative material. */
+.scene-stage {
+  --hero-center-inset: 25%;
+  --field-envelope-width: 49%;
+  --field-secondary-width: 30%;
+  --field-secondary-x: 30%;
+  --portrait-left: -3%;
+  --portrait-width: 38%;
+  --portrait-height: 96%;
+  --portrait-opacity: .95;
+  --workflow-right: 3%;
+  --workflow-width: 35%;
+  --workflow-height: 94%;
+  --workflow-opacity: 1;
+}
+
+.hero-atmosphere {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  mask-image:
+    radial-gradient(ellipse var(--field-envelope-width) 48% at 50% 50%, #000 var(--hero-field-solid-stop), rgb(0 0 0 / .55) var(--hero-field-fade-stop), transparent 100%),
+    radial-gradient(ellipse var(--field-secondary-width) 44% at var(--field-secondary-x) 48%, rgb(0 0 0 / .45) 35%, transparent 100%);
+}
+
+.hero-dot-surface {
+  position: absolute;
+  inset: 0;
+  mask-image: radial-gradient(circle, #000 var(--hero-dot-radius), transparent calc(var(--hero-dot-radius) + .35px));
+  mask-size: var(--hero-dot-spacing) var(--hero-dot-spacing);
+  mask-repeat: repeat;
+  mask-position: 0 0;
+}
+
+.hero-dot-field {
+  position: absolute;
+  inset: 0;
+  background-color: rgb(var(--hero-field-rgb) / var(--hero-field-contrast));
+  /* Keep a visible bridge through the center; never make a hole or a panel. */
+  mask-image: radial-gradient(ellipse 48% 72% at 50% 48%, rgb(0 0 0 / var(--hero-field-center-opacity)) 15%, #000 86%);
+}
+
+.hero-portrait {
+  position: absolute;
+  left: var(--portrait-left);
+  bottom: 12px;
+  width: var(--portrait-width);
+  height: var(--portrait-height);
+  opacity: var(--portrait-opacity);
+  mask-image: linear-gradient(#000 62%, rgb(0 0 0 / .8) 80%, transparent 100%);
+}
+
+.portrait-filter { position: absolute; }
+.hero-portrait img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  filter: url(#portrait-cool);
+}
+
+.hero-flow {
+  position: absolute;
+  right: var(--workflow-right);
+  bottom: 14px;
+  width: var(--workflow-width);
+  height: var(--workflow-height);
+  opacity: var(--workflow-opacity);
+  color: rgb(var(--hero-field-rgb));
+}
+.hero-flow svg { width: 100%; height: 100%; overflow: visible; }
+
+@media (min-width: 760px) and (max-width: 1099px) {
+  .scene-stage {
+    --hero-center-inset: 23%;
+    --portrait-left: -6%;
+    --portrait-width: 40%;
+    --workflow-right: 0%;
+    --workflow-width: 38%;
+    --workflow-opacity: .95;
+  }
+}
+
+@media (max-width: 759px) {
+  .scene-stage {
+    --hero-center-inset: 10%;
+    --field-envelope-width: 55%;
+    --field-secondary-width: 35%;
+    --field-secondary-x: 25%;
+    --hero-dot-spacing: 5px;
+    --hero-dot-radius: 1.35px;
+    --hero-field-contrast: .28;
+    --hero-field-center-opacity: .66;
+    --portrait-left: -27%;
+    --portrait-width: 86%;
+    --portrait-height: 94%;
+    --portrait-opacity: .86;
+    --workflow-right: -6%;
+    --workflow-width: 92%;
+    --workflow-height: 92%;
+    --workflow-opacity: .9;
+  }
+}
