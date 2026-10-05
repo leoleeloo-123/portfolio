@@ -23,4 +23,13 @@ The 2560px evidence uses full-page captures to include both margins beyond the i
 
 ## Scope
 
-The owner initially requested local implementation only, then approved GitHub commit/push and production publication on 2026-10-05. Deployment through the existing main-branch integration is pending; actual production checks will be recorded below. The prior published revision is 07a29fd. Detailed content stays at the existing visual checkpoint. Earlier active docs are retained under archive/hero-before-continuous-field/docs/ and Git history.
+The owner initially requested local implementation only, then approved GitHub commit/push and production publication on 2026-10-05. Source revision 13dd47f deployed READY through the existing main-branch integration on 2026-10-05. The prior published revision is 07a29fd. Detailed content stays at the existing visual checkpoint. Earlier active docs are retained under archive/hero-before-continuous-field/docs/ and Git history.
+## Production verification — 2026-10-05
+
+Vercel production deployment dpl_E5fJpp4aWkxst2gBTSKmm7336Wy6 serves leo-li.vercel.app from GitHub main source commit 13dd47f. Framework Vite; building-to-ready interval approximately 11 seconds.
+
+English desktop at 1440px and Chinese mobile at 390px reached WebGL ready with one canvas, five circular nodes, the shared field and loaded portrait. Neither showed horizontal overflow; no application console errors were captured. Scene copy remains Business / Workflows / Systems and 业财税 / 工作流 / 数字化.
+
+Both locale/slash URLs returned 200. HTTP checks discover the actual production modules from the live HTML/main module, rather than assuming the Windows build filenames: index-B5z3VpA6.js, index-BNcKzI8p.css and SceneCanvas-CIW6C5a3.js returned 200 with correct MIME types, as did the portrait PNG. A deliberate missing JS path remained 404. Initial checks using local filenames were replaced with this production-reference method; the filenames differ between builds.
+
+Production browser observations, HTTP results and desktop/mobile screenshots are in evidence/continuous-field/production-*. Physical iPhone behavior remains outside these Windows browser checks. No additional cloud projects or backend were created.

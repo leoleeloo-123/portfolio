@@ -1,0 +1,79 @@
+{
+  "checkedAt": "2026-10-05T02:42:05.342Z",
+  "base": "https://leo-li.vercel.app",
+  "assetDiscovery": "Production HTML and its main module (not local build filenames)",
+  "results": [
+    {
+      "path": "/en/",
+      "status": 200,
+      "url": "https://leo-li.vercel.app/en/",
+      "type": "text/html; charset=utf-8",
+      "bytes": 615,
+      "pass": true
+    },
+    {
+      "path": "/zh/",
+      "status": 200,
+      "url": "https://leo-li.vercel.app/zh/",
+      "type": "text/html; charset=utf-8",
+      "bytes": 615,
+      "pass": true
+    },
+    {
+      "path": "/en",
+      "status": 200,
+      "url": "https://leo-li.vercel.app/en/",
+      "type": "text/html; charset=utf-8",
+      "bytes": 615,
+      "pass": true
+    },
+    {
+      "path": "/zh",
+      "status": 200,
+      "url": "https://leo-li.vercel.app/zh/",
+      "type": "text/html; charset=utf-8",
+      "bytes": 615,
+      "pass": true
+    },
+    {
+      "path": "/assets/index-B5z3VpA6.js",
+      "status": 200,
+      "url": "https://leo-li.vercel.app/assets/index-B5z3VpA6.js",
+      "type": "application/javascript; charset=utf-8",
+      "bytes": 295637,
+      "pass": true
+    },
+    {
+      "path": "/assets/index-BNcKzI8p.css",
+      "status": 200,
+      "url": "https://leo-li.vercel.app/assets/index-BNcKzI8p.css",
+      "type": "text/css; charset=utf-8",
+      "bytes": 30196,
+      "pass": true
+    },
+    {
+      "path": "/assets/SceneCanvas-CIW6C5a3.js",
+      "status": 200,
+      "url": "https://leo-li.vercel.app/assets/SceneCanvas-CIW6C5a3.js",
+      "type": "application/javascript; charset=utf-8",
+      "bytes": 925159,
+      "pass": true
+    },
+    {
+      "path": "/images/leo-portrait-professional.png",
+      "status": 200,
+      "url": "https://leo-li.vercel.app/images/leo-portrait-professional.png",
+      "type": "image/png",
+      "bytes": 1754183,
+      "pass": true
+    },
+    {
+      "path": "/assets/missing-check.js",
+      "status": 404,
+      "url": "https://leo-li.vercel.app/assets/missing-check.js",
+      "type": "text/plain; charset=utf-8",
+      "bytes": 79,
+      "pass": true
+    }
+  ]
+}

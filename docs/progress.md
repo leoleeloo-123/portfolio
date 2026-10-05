@@ -4,7 +4,7 @@
 
 Integrated ambient light, portrait and flat circular workflow into one stage-origin dot screen with a softly dissolving perimeter. The 1440px artwork cap, central attenuation and responsive offsets are centralized in tokens/hero-field.css. The blue/purple gradient, cube optics/interaction and existing content are preserved. Mobile foreground width is 80% to expose supporting forms; artwork height is unchanged. Earlier random particles/haze/traveling accents are removed.
 
-Final build/lint and both-locales responsive checks at 320, 390, 768, 1440 and 2560px passed. Evidence and actual limits are recorded in docs/continuous-field-review.md and evidence/continuous-field/. The owner approved GitHub commit/push and production publication on 2026-10-05. The existing main-branch deployment is pending; actual production checks will be appended after verification.
+Final build/lint and both-locales responsive checks at 320, 390, 768, 1440 and 2560px passed. Evidence and actual limits are recorded in docs/continuous-field-review.md and evidence/continuous-field/. The owner approved GitHub commit/push and production publication on 2026-10-05. Source revision 13dd47f deployed READY as dpl_E5fJpp4aWkxst2gBTSKmm7336Wy6. Live English desktop and Chinese mobile reached WebGL ready with the shared screen, five circles and loaded portrait; no overflow or application console errors. Locale URLs and actual production assets passed HTTP checks. See evidence/continuous-field/production-* and the current review.
 
 ## Previous deployed checkpoint: dotted workflow atmosphere
 

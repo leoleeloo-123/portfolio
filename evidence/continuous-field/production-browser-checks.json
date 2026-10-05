@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-10-05T02:42:59.637Z",
+  "checks": [
+    {
+      "assets": [
+        "https://leo-li.vercel.app/assets/index-B5z3VpA6.js",
+        "https://leo-li.vercel.app/assets/index-BNcKzI8p.css"
+      ],
+      "canvases": 1,
+      "field": true,
+      "locale": "en",
+      "mode": "webgl",
+      "nodes": 5,
+      "overflow": false,
+      "portraitLoaded": true,
+      "ready": "true",
+      "sharedScreen": true,
+      "text": "Business / Workflows / SystemsUse the left and right arrow keys to rotate. Press Home to reset.",
+      "url": "https://leo-li.vercel.app/en/",
+      "width": 1440
+    },
+    {
+      "canvases": 1,
+      "field": true,
+      "grid": "5px 5px",
+      "locale": "zh-Hans",
+      "mode": "webgl",
+      "nodes": 5,
+      "overflow": false,
+      "portraitLoaded": true,
+      "ready": "true",
+      "sharedScreen": true,
+      "text": "业财税 / 工作流 / 数字化使用左右方向键旋转，按 Home 键复位。",
+      "url": "https://leo-li.vercel.app/zh/",
+      "width": 390
+    }
+  ],
+  "errors": []
+}
